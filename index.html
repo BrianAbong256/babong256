@@ -7,13 +7,7 @@
 <title>Brian Abong - Communications &amp; Creative</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
 <style>
-
-  .about-pic{
-    position: absolute;
-    left: 40%;
-    top: 20%;
-
-  }
+  .about-pic{position:absolute;scale:20%;z-index:1000;animation:fadeUp .65s .25s ease both;}
 *{margin:0;padding:0;box-sizing:border-box}
 :root{--black:#0d0c0a;--deep:#1a1712;--earth:#2c2618;--bark:#3d3325;--orange:#f6af18;--sand:#c8a96e;--muted:#8a7a62;--white:#faf7f2;}
 html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-family:"Montserrat",sans-serif;cursor:none}
@@ -65,7 +59,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
 .tag{position:absolute;top:5.2rem;left:3rem;font-family:"Montserrat",sans-serif;font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
 .name-block{position:absolute;left:3rem;top:50%;transform:translateY(-55%)}
 .p-hero h1{font-family:"Playfair Display",serif;font-size:clamp(2.8rem,6vw,5.4rem);color:var(--white);line-height:.94;font-weight:700}
-.p-hero h1 em{font-style:italic;color:var(--orange);display:inline-block;animation:wordFloat 3.5s ease-in-out infinite}
+.p-hero h1 em{font-style:italic;color:var(--orange);display:inline-block;animation:wordFloat 1.5s ease-in-out infinite}
 @keyframes wordFloat{0%,100%{transform:translateY(0) rotate(0)}40%{transform:translateY(-6px) rotate(-1deg)}70%{transform:translateY(-3px) rotate(.5deg)}}
 .p-hero .sub{margin-top:1.5rem;font-size:.88rem;color:var(--muted);font-weight:300;max-width:360px;line-height:1.8}
 .cta{margin-top:2.5rem;display:inline-flex;align-items:center;gap:.75rem;font-family:"Montserrat",sans-serif;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--orange);cursor:pointer;border:none;background:none;padding:0;transition:gap .3s;font-weight:500}
@@ -95,9 +89,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
 .org-pill{background:var(--earth);border:1px solid var(--bark);color:var(--sand);font-size:.62rem;letter-spacing:.1em;padding:.32rem .85rem;border-radius:2px;font-family:"Montserrat",sans-serif;text-transform:uppercase;opacity:0}
 .org-pill.visible{opacity:1}
 .p-about .deco{position:absolute;right:0;top:0;bottom:0;width:34%;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:2rem;background:linear-gradient(to right,transparent,var(--earth) 25%)}
-.about-img
-{width:130px;height:130px;clip-path:polygon(50% 0%,100% 50%,50% 100%,0% 50%);background:var(--bark);overflow:hidden;display:flex;align-items:center;justify-content:center;border:1px solid var(--bark)
-}
+.about-img{width:130px;height:130px;clip-path:polygon(50% 0%,100% 50%,50% 100%,0% 50%);background:var(--bark);overflow:hidden;display:flex;align-items:center;justify-content:center;border:1px solid var(--bark)}
 .about-img img{width:100%;height:100%;object-fit:cover}
 .about-img-ph{font-family:"Montserrat",sans-serif;font-size:2rem;font-weight:700;color:var(--orange);opacity:.4}
 .stat-item .num{font-family:"Montserrat",sans-serif;font-size:3.2rem;color:var(--orange);line-height:1;font-weight:700;text-align:center}
@@ -159,25 +151,30 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
 .avail-dot{width:6px;height:6px;background:#4caf50;border-radius:50%;animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
 
-/* ANIMATED SVG LOGO — Contact right panel */
+/* ── ANIMATED PEN-DRAW LOGO — Contact right panel ── */
 .logo-panel{position:absolute;right:0;top:0;bottom:0;width:44%;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden}
 .abong-logo{width:55%;height:auto;display:block;max-width:220px}
-.logo-path{fill:none;stroke:#f6af18;stroke-width:7;stroke-dasharray:2258.29;stroke-dashoffset:2258.29;animation:drawLogo 6.5s cubic-bezier(.65,0,.35,1) infinite}
-@keyframes drawLogo{
-  0%{stroke-dashoffset:2258.29;opacity:1}
-  65%{stroke-dashoffset:0;opacity:1}
-  87%{stroke-dashoffset:0;opacity:1}
-  96%{stroke-dashoffset:0;opacity:0}
-  100%{stroke-dashoffset:2258.29;opacity:0}
+
+/* All strokes invisible by default; each segment draws in sequence */
+.logo-seg{
+  fill:none;
+  stroke:#f6af18;
+  stroke-width:6;
+  stroke-linecap:round;
+  stroke-linejoin:round;
 }
-.pen-nib-glow{fill:red;animation:nibPulse .4s ease-in-out infinite alternate}
-@keyframes nibPulse{from{r:6}to{r:9}}
-.logo-wordmark{font-family:"Montserrat",sans-serif;font-size:.7rem;letter-spacing:.6em;color:var(--sand);text-transform:uppercase;text-align:center;margin-top:.75rem;animation:abongFadeUp 6.5s ease-in-out infinite}
-@keyframes abongFadeUp{
-  0%,58%{opacity:0;transform:translateY(10px)}
-  72%,88%{opacity:1;transform:translateY(0)}
-  96%,100%{opacity:0;transform:translateY(-6px)}
+
+/* Pen-nib dot */
+.pen-dot{fill:#f6af18;r:5;}
+
+.logo-wordmark{
+  font-family:"Montserrat",sans-serif;
+  font-size:.7rem;letter-spacing:.6em;color:var(--sand);
+  text-transform:uppercase;text-align:center;margin-top:.75rem;
+  opacity:0;
+  animation:wmarkFade 1s 6.2s ease forwards;
 }
+@keyframes wmarkFade{to{opacity:1}}
 
 /* MODAL */
 .modal-overlay{position:fixed;inset:0;z-index:500;display:flex;align-items:center;justify-content:center;background:rgba(13,12,10,0);backdrop-filter:blur(0px);pointer-events:none;transition:background .45s,backdrop-filter .45s}
@@ -196,6 +193,8 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
 .modal-body{display:flex;flex:1;overflow:hidden;min-height:0}
 .modal-visual{width:48%;position:relative;overflow:hidden;flex-shrink:0;transition:opacity .28s ease}
 .modal-visual-inner{width:100%;height:100%;position:relative}
+
+/* ── MEDIA TYPES ── */
 .yt-thumb{width:100%;height:100%;position:relative;cursor:pointer;overflow:hidden;display:block}
 .yt-thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
 .yt-thumb:hover img{transform:scale(1.04)}
@@ -204,11 +203,30 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
 .yt-play-btn{width:56px;height:56px;background:rgba(246,175,24,.9);border-radius:50%;display:flex;align-items:center;justify-content:center}
 .yt-play-btn svg{width:20px;height:20px;fill:var(--black);margin-left:3px}
 .yt-label{position:absolute;bottom:.6rem;left:50%;transform:translateX(-50%);font-family:"Montserrat",sans-serif;font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;color:var(--white);background:rgba(13,12,10,.7);padding:.2rem .6rem;white-space:nowrap}
+
+/* Google Drive embed */
+.drive-frame{width:100%;height:100%;border:none;display:block;background:var(--black)}
+
+/* Facebook / X / Social embed container */
+.social-embed-wrap{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:var(--black);overflow:hidden;position:relative}
+.social-embed-wrap iframe{width:100%;height:100%;border:none;transform-origin:top left}
+.social-open-btn{position:absolute;bottom:.6rem;left:50%;transform:translateX(-50%);font-family:"Montserrat",sans-serif;font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;color:var(--white);background:rgba(13,12,10,.75);border:1px solid var(--bark);padding:.3rem .8rem;cursor:pointer;text-decoration:none;white-space:nowrap;transition:border-color .25s,color .25s}
+.social-open-btn:hover{border-color:var(--orange);color:var(--orange)}
+
+/* Source badge on thumbnail */
+.src-badge{position:absolute;top:.5rem;right:.5rem;font-family:"Montserrat",sans-serif;font-size:.5rem;letter-spacing:.12em;text-transform:uppercase;padding:.18rem .5rem;border-radius:2px;font-weight:600}
+.src-badge.yt{background:#ff0000;color:#fff}
+.src-badge.drive{background:#1a73e8;color:#fff}
+.src-badge.fb{background:#1877f2;color:#fff}
+.src-badge.x{background:#000;color:#fff;border:1px solid #333}
+.src-badge.img{background:var(--bark);color:var(--sand)}
+
 .media-ph{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden}
 .media-ph-pat{position:absolute;inset:0;width:100%;height:100%;opacity:.1}
 .media-ph-abbr{font-family:"Montserrat",sans-serif;font-size:2.5rem;letter-spacing:.15em;color:var(--sand);opacity:.35;position:relative;z-index:1;font-weight:700}
 .media-ph-hint{margin-top:.6rem;font-family:"Montserrat",sans-serif;font-size:.55rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sand);opacity:.4;position:relative;z-index:1}
 .modal-main-img{width:100%;height:100%;object-fit:cover;display:block}
+
 /* Media navigation within visual */
 .media-nav{position:absolute;bottom:0;left:0;right:0;padding:.4rem .6rem;background:linear-gradient(transparent,rgba(13,12,10,.85));display:flex;align-items:center;justify-content:space-between;z-index:2}
 .media-nav-btn{background:none;border:1px solid rgba(255,255,255,.2);color:var(--white);cursor:pointer;width:24px;height:24px;display:flex;align-items:center;justify-content:center;transition:border-color .2s;flex-shrink:0}
@@ -216,11 +234,10 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
 .media-nav-btn svg{width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .media-nav-count{font-family:"Montserrat",sans-serif;font-size:.55rem;letter-spacing:.1em;color:var(--sand)}
 .media-thumbs{display:flex;gap:.3rem;overflow-x:auto}
-.media-thumb{width:38px;height:38px;border:1.5px solid transparent;flex-shrink:0;cursor:pointer;overflow:hidden;transition:border-color .2s;background:var(--bark)}
+.media-thumb{width:38px;height:38px;border:1.5px solid transparent;flex-shrink:0;cursor:pointer;overflow:hidden;transition:border-color .2s;background:var(--bark);display:flex;align-items:center;justify-content:center;position:relative}
 .media-thumb.active{border-color:var(--orange)}
 .media-thumb img{width:100%;height:100%;object-fit:cover;display:block}
-.media-thumb-yt{display:flex;align-items:center;justify-content:center;background:var(--bark);width:100%;height:100%}
-.media-thumb-yt svg{width:14px;height:14px;fill:var(--orange)}
+.media-thumb-ico{width:16px;height:16px}
 .modal-info{flex:1;padding:1.75rem 2rem;overflow-y:auto;display:flex;flex-direction:column;justify-content:center;scrollbar-width:thin;scrollbar-color:var(--bark) transparent}
 .modal-info::-webkit-scrollbar{width:3px}
 .modal-info::-webkit-scrollbar-thumb{background:var(--bark)}
@@ -343,7 +360,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
     </button>
   </div>
   <div class="stat-block anim-3">
-    <div class="bignum">11+</div>
+    <div class="bignum">11<span style="color:var(--black)">+</span></div>
     <div class="yrs"><span>Years</span><br>across Uganda &amp; beyond</div>
   </div>
   <div class="scroll-hint anim-5"><div class="line"></div>Use arrows or keys to navigate</div>
@@ -353,12 +370,9 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
 <div class="panel p-about">
   <div class="inner">
     <div class="section-label anim-1">About</div>
-    >
     <h2 class="anim-2">Newsroom trained.<br><em>Mission driven.</em></h2>
-    <div class="about-pic"><img src="about-pic.png" alt="Brian Abong"></div>
     <p class="anim-3">I am a communications specialist with roots in the newsroom and a career built across Uganda&rsquo;s water, conservation and development sectors. I bring a journalist&rsquo;s instinct for the right story at the right moment &mdash; and a designer&rsquo;s eye for making it land.</p>
     <p class="anim-4">From breaking news to brand strategy, annual reports to short documentaries, I turn complex missions into clear, compelling human stories. Now pivoting to remote consulting, I help organisations communicate with clarity, creativity and cultural resonance.</p>
-    
     <div class="orgs anim-5" id="aboutPills">
       <div class="org-pill">NWSC</div>
       <div class="org-pill">Nature Uganda</div>
@@ -371,8 +385,6 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
     </div>
   </div>
   <div class="deco">
-    <!-- Profile image: replace the placeholder div with <img src="img/profile.jpg" alt="Brian Abong"> -->
-    <!--div class="about-img-ph">BA</div></div-->
     <div class="stat-item"><div class="num" data-target="9" id="statOrgs">0</div><div class="lbl">Organisations</div></div>
     <div class="stat-item"><div class="num" data-target="6" id="statSectors">0</div><div class="lbl">Sectors</div></div>
     <div class="stat-item"><div class="num" data-target="11" id="statYears">0</div><div class="lbl">Years</div></div>
@@ -416,22 +428,26 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
     <h2 class="anim-2">Projects &amp;<br><em>campaigns</em></h2>
     <div class="work-list" id="workList">
       <div class="work-item anim-2" onclick="openModal(0)">
-        <div><div class="wi-org">National Water &amp; Sewerage Corporation</div><div class="wi-title">Website Management &amp; Digital Communications</div></div>
+        <div><div class="wi-org">National Water &amp; Sewerage Corporation</div><div class="wi-title">Events, Branding &amp; Digital Communications</div></div>
         <div class="wi-right"><div class="wi-tag">Web &amp; Digital</div><svg class="wi-arr" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
       </div>
-      <div class="work-item anim-3" onclick="openModal(1)">
-        <div><div class="wi-org">Nature Uganda</div><div class="wi-title">Conservation Storytelling &amp; Social Media Campaigns</div></div>
-        <div class="wi-right"><div class="wi-tag">Content &amp; Film</div><svg class="wi-arr" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+      <div class="work-item anim-2" onclick="openModal(1)">
+        <div><div class="wi-org">Associazione Centro Aiuti Volontari</div><div class="wi-title">Donor Compliant Communications</div></div>
+        <div class="wi-right"><div class="wi-tag">Communications</div><svg class="wi-arr" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
       </div>
       <div class="work-item anim-3" onclick="openModal(2)">
         <div><div class="wi-org">Plan International Uganda</div><div class="wi-title">Programme Visibility &amp; Communications</div></div>
         <div class="wi-right"><div class="wi-tag">Strategy</div><svg class="wi-arr" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
       </div>
-      <div class="work-item anim-4" onclick="openModal(3)">
-        <div><div class="wi-org">Associazione Centro Aiuti Volontari</div><div class="wi-title">Project Visibility &amp; Communications Strategy</div></div>
-        <div class="wi-right"><div class="wi-tag">Print &amp; Film</div><svg class="wi-arr" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+      <div class="work-item anim-3" onclick="openModal(3)">
+        <div><div class="wi-org">Nature Uganda</div><div class="wi-title">Conservation Storytelling &amp; Social Media Campaigns</div></div>
+        <div class="wi-right"><div class="wi-tag">Content &amp; Film</div><svg class="wi-arr" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
       </div>
       <div class="work-item anim-4" onclick="openModal(4)">
+        <div><div class="wi-org">Associazione Centro Aiuti Volontari</div><div class="wi-title">Senior Visibility &amp; Communications Strategy</div></div>
+        <div class="wi-right"><div class="wi-tag">Print &amp; Film</div><svg class="wi-arr" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+      </div>
+      <div class="work-item anim-4" onclick="openModal(5)">
         <div><div class="wi-org">Young Water Professionals Uganda</div><div class="wi-title">Chapter Launch, Events &amp; Publicity</div></div>
         <div class="wi-right"><div class="wi-tag">Events</div><svg class="wi-arr" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
       </div>
@@ -476,7 +492,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
 <div class="panel p-contact">
   <div class="inner">
     <div class="section-label anim-1">Contact</div>
-    <h2 class="anim-2">Let&rsquo;s build<br>something <em>real.</em></h2>
+    <h2 class="anim-2">Let&rsquo;s build<br>something <em>Awesome!</em></h2>
     <p class="tagline anim-2">Open to remote contracts, consultancy and part-time roles.</p>
     <div class="contact-links anim-3">
       <a class="clink" href="mailto:abongbryan@yahoo.com">
@@ -491,62 +507,83 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
         <div class="cl-ico"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.73a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
         <div><div class="cl-label">WhatsApp &amp; Phone</div><div class="cl-val">+256 741 857 948 &nbsp;&middot;&nbsp; +256 760 370 866</div></div>
       </a>
-      <!-- UPDATE: replace YOUR_CHANNEL with your YouTube channel handle -->
-      <a class="clink" href="https://www.youtube.com/@YOUR_CHANNEL" target="_blank" rel="noopener">
+      <a class="clink" href="https://www.youtube.com/@brianabong8612" target="_blank" rel="noopener">
         <div class="cl-ico"><svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="var(--black)" stroke="none"/></svg></div>
-        <div><div class="cl-label">YouTube Channel</div><div class="cl-val">Your Channel Name</div></div>
+        <div><div class="cl-label">YouTube Channel</div><div class="cl-val">Brian Abong</div></div>
       </a>
     </div>
     <div class="availability anim-4"><div class="avail-dot"></div>Available for new projects</div>
   </div>
 
-  <!-- ANIMATED SVG LOGO — right column -->
+  <!-- ── ANIMATED PEN-DRAW SVG LOGO — right column ── -->
   <div class="logo-panel anim-3">
-    <svg class="abong-logo" viewBox="0 0 450 450" xmlns="http://www.w3.org/2000/svg">
-      <path id="logoPath" class="logo-path"
-        d="M424.9,327.75c5.17,16.7,4.69,36.62-1.23,52.98
-           M342.75,438.09c18.39,0,35.43-5.79,49.39-15.66
-           M392.14,422.43c14.43-10.18,25.58-24.72,31.53-41.7
-           M293.35,422.43c13.96,9.87,31.01,15.66,49.4,15.66
-           M64.26,438.18c12.5,0,24.08-3.93,33.56-10.64
-           M9.26,399.21c4.04,11.54,11.62,21.41,21.43,28.33
-           M97.82,427.54c9.81-6.92,17.38-16.8,21.43-28.34
-           M30.69,427.54c9.49,6.71,21.07,10.64,33.57,10.64
-           M175.99,17.63c9.85,7.39,17.3,17.84,20.9,29.93
-             c0,0,64.93,333.18,64.93,333.18c5.95,16.98,17.1,31.51,31.53,41.69
-           M119.25,399.21c13.11-22.02-45.1-328.84-34.01-351.65
-           M106.14,17.63c-9.85,7.39-17.29,17.83-20.9,29.93
-           M141.07,6c-13.1,0-25.2,4.32-34.93,11.63
-           M175.99,17.63C166.26,10.32,154.17,6,141.07,6
-           M323.38,22.78c84.8,72.02-57.37,144.14-91.86,175.91
-             c0.26,0.13,162.79,85.11,162.87,85.14c14.5,10.87,25.2,26.12,30.5,43.92
-           M288.46,11.15c-13.1,0-25.2,4.32-34.93,11.63
-           M323.38,22.78c-9.73-7.31-21.82-11.63-34.92-11.63
-           M253.53,22.78c-5.49,4.12-10.24,9.19-13.99,14.96
-             c0,0-226.32,298.97-231.12,325.45c-3.53,11.36-3.18,24.89,0.84,36.02"/>
-      <!-- PEN NIB: dot + glow that follows the path as it draws -->
-      <g>
-        <circle class="pen-nib-glow" r="7" fill="red">
-          <animateMotion dur="6.5s" repeatCount="indefinite" calcMode="spline"
-            keyPoints="0;1;1;1" keyTimes="0;0.65;0.87;1"
-            keySplines="0.65 0 0.35 1;0 0 1 1;0 0 1 1">
-            <mpath xlink:href="#logoPath" href="#logoPath"/>
-          </animateMotion>
-          <animate attributeName="opacity" dur="6.5s" repeatCount="indefinite"
-            keyTimes="0;0.65;0.88;0.96;1" values="0.6;0.6;0.3;0;0" calcMode="linear"/>
-        </circle>
-        <circle r="3.5" fill="#f6af18">
-          <animateMotion dur="6.5s" repeatCount="indefinite" calcMode="spline"
-            keyPoints="0;1;1;1" keyTimes="0;0.65;0.87;1"
-            keySplines="0.65 0 0.35 1;0 0 1 1;0 0 1 1">
-            <mpath xlink:href="#logoPath" href="#logoPath"/>
-          </animateMotion>
-          <animate attributeName="opacity" dur="6.5s" repeatCount="indefinite"
-            keyTimes="0;0.65;0.87;0.96;1" values="1;1;0.5;0;0" calcMode="linear"/>
-        </circle>
-      </g>
+    <!--
+      TRUE single-path pen-draw logo.
+      The path is one continuous stroke — no M (move) gaps.
+      Pen lifts between letters are bridged with zero-opacity connector lines
+      handled entirely in JS so dashoffset draws smoothly from start to finish.
+    -->
+    <svg id="abongSVG" class="abong-logo" viewBox="0 0 460 300" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="nibGlow2" x="-80%" y="-80%" width="260%" height="260%">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+
+      <!--
+        Handwritten-style "ABONG" as a SINGLE connected path.
+        Each letter ends where the next begins so there are no gaps.
+        Total approximate length measured via JS on load.
+      -->
+      <path id="penPath" fill="none" stroke="#f6af18" stroke-width="5"
+        stroke-linecap="round" stroke-linejoin="round"
+        d="
+          M 30,200
+          C 35,130 55,80 75,80
+          C 95,80 100,130 95,200
+          L 62,140
+          L 30,200
+
+          L 62,140
+          C 62,140 110,140 120,140
+
+          M 120,200
+          C 120,200 118,90 120,85
+          C 122,80 130,78 138,82
+          C 155,90 158,115 155,140
+          C 152,165 140,175 128,172
+          C 120,170 118,162 120,155
+          C 124,140 140,135 155,140
+          C 168,145 172,160 172,200
+
+          M 185,80
+          C 185,80 183,200 185,200
+          C 185,200 215,200 220,200
+          C 235,200 245,185 245,160
+          C 245,135 235,120 220,120
+          C 205,120 185,130 185,160
+
+          M 260,130
+          C 260,100 275,80 295,80
+          C 315,80 330,100 330,140
+          C 330,180 315,205 295,205
+          C 275,205 258,185 258,155
+          C 258,135 268,120 285,118
+          C 305,116 325,130 328,155
+          L 328,200
+
+          M 345,85
+          L 345,200
+          C 345,200 345,160 370,145
+          C 390,133 405,140 410,155
+          L 410,200
+        "/>
+
+      <!-- Pen nib dot — JS controlled -->
+      <circle id="penNib" r="5" fill="#f6af18" filter="url(#nibGlow2)" opacity="0"/>
     </svg>
-    <div class="logo-wordmark">ABONG</div>
+    <div class="logo-wordmark" id="logoWordmark" style="opacity:0">ABONG</div>
   </div>
 </div>
 
@@ -573,48 +610,41 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
 
 <script>
 // ── CURSOR ──
-var cursor = document.getElementById("cursor");
-document.addEventListener("mousemove", function(e){ cursor.style.left=e.clientX+"px"; cursor.style.top=e.clientY+"px"; });
-document.addEventListener("mousedown", function(){ cursor.classList.add("big"); });
-document.addEventListener("mouseup",   function(){ cursor.classList.remove("big"); });
+var cursor=document.getElementById("cursor");
+document.addEventListener("mousemove",function(e){cursor.style.left=e.clientX+"px";cursor.style.top=e.clientY+"px";});
+document.addEventListener("mousedown",function(){cursor.classList.add("big");});
+document.addEventListener("mouseup",function(){cursor.classList.remove("big");});
 
 // ── SLIDE NAVIGATION ──
-var cur=0, total=6;
+var cur=0,total=6;
 var stage=document.getElementById("stage");
 var dots=document.querySelectorAll(".dot");
 var curEl=document.getElementById("cur");
 var fills=document.querySelectorAll(".sb-fill");
-var skillsAnimated=false;
-var statsAnimated=false;
+var skillsAnimated=false,statsAnimated=false;
 
 function goTo(n){
   if(n<0||n>=total)return;
-  // Remove entry class from current panel
   var panels=document.querySelectorAll(".panel");
   panels[cur].classList.remove("panel-entered");
-  // Reset pills in current
   resetPills(panels[cur]);
   cur=n;
   stage.style.transform="translateX(calc(-"+(100/6*cur)+"% ))";
-  dots.forEach(function(d,i){ d.classList.toggle("active",i===cur); });
+  dots.forEach(function(d,i){d.classList.toggle("active",i===cur);});
   curEl.textContent=String(cur+1).padStart(2,"0");
-  // Trigger entry animations
   setTimeout(function(){
     panels[cur].classList.add("panel-entered");
-    if(cur===1) triggerAbout();
-    if(cur===4) triggerSkills();
+    if(cur===1)triggerAbout();
+    if(cur===4)triggerSkills();
     triggerPills(panels[cur]);
   },80);
 }
 
 function resetPills(panel){
   panel.querySelectorAll(".org-pill").forEach(function(p){
-    p.classList.remove("visible");
-    p.style.animation="none";
-    p.style.opacity="0";
+    p.classList.remove("visible");p.style.animation="none";p.style.opacity="0";
   });
 }
-
 function triggerPills(panel){
   var pills=panel.querySelectorAll(".org-pill");
   pills.forEach(function(pill,i){
@@ -624,253 +654,387 @@ function triggerPills(panel){
     },300+i*55);
   });
 }
-
 function triggerAbout(){
-  if(!statsAnimated){
-    statsAnimated=true;
-    countUp("statOrgs",9,1200,"+");
-    countUp("statSectors",6,1000,"");
-    countUp("statYears",11,1400,"+");
-  }
+  if(!statsAnimated){statsAnimated=true;countUp("statOrgs",9,1200,"+");countUp("statSectors",6,1000,"");countUp("statYears",11,1400,"+");}
 }
-
 function countUp(id,target,dur,suffix){
-  var el=document.getElementById(id);
-  if(!el)return;
-  var start=0, step=16;
-  var inc=target/(dur/step);
-  var timer=setInterval(function(){
-    start+=inc;
-    if(start>=target){ el.textContent=target+suffix; clearInterval(timer); }
-    else el.textContent=Math.floor(start)+suffix;
-  },step);
+  var el=document.getElementById(id);if(!el)return;
+  var start=0,step=16,inc=target/(dur/step);
+  var timer=setInterval(function(){start+=inc;if(start>=target){el.textContent=target+suffix;clearInterval(timer);}else el.textContent=Math.floor(start)+suffix;},step);
 }
-
 function triggerSkills(){
-  if(skillsAnimated)return;
-  skillsAnimated=true;
-  setTimeout(function(){
-    fills.forEach(function(f){ f.style.transform="scaleX("+f.dataset.w+")"; });
-  },300);
+  if(skillsAnimated)return;skillsAnimated=true;
+  setTimeout(function(){fills.forEach(function(f){f.style.transform="scaleX("+f.dataset.w+")";});},300);
 }
 
-document.getElementById("next").addEventListener("click",function(){ goTo(cur+1); });
-document.getElementById("prev").addEventListener("click",function(){ goTo(cur-1); });
-dots.forEach(function(d){ d.addEventListener("click",function(){ goTo(+d.dataset.i); }); });
+document.getElementById("next").addEventListener("click",function(){goTo(cur+1);});
+document.getElementById("prev").addEventListener("click",function(){goTo(cur-1);});
+dots.forEach(function(d){d.addEventListener("click",function(){goTo(+d.dataset.i);});});
 
 document.addEventListener("keydown",function(e){
   var mo=document.getElementById("modal").classList.contains("open");
-  if(mo){ if(e.key==="Escape")closeModal(); if(e.key==="ArrowRight")navModal(1); if(e.key==="ArrowLeft")navModal(-1); }
-  else{ if(e.key==="ArrowRight")goTo(cur+1); if(e.key==="ArrowLeft")goTo(cur-1); }
+  if(mo){if(e.key==="Escape")closeModal();if(e.key==="ArrowRight")navModal(1);if(e.key==="ArrowLeft")navModal(-1);}
+  else{if(e.key==="ArrowRight")goTo(cur+1);if(e.key==="ArrowLeft")goTo(cur-1);}
 });
 var tX=0;
-document.addEventListener("touchstart",function(e){ tX=e.touches[0].clientX; },{passive:true});
+document.addEventListener("touchstart",function(e){tX=e.touches[0].clientX;},{passive:true});
 document.addEventListener("touchend",function(e){
   if(document.getElementById("modal").classList.contains("open"))return;
   var dx=e.changedTouches[0].clientX-tX;
-  if(Math.abs(dx)>50){ dx<0?goTo(cur+1):goTo(cur-1); }
+  if(Math.abs(dx)>50){dx<0?goTo(cur+1):goTo(cur-1);}
 });
 
-// Initial panel entry
-setTimeout(function(){ document.querySelectorAll(".panel")[0].classList.add("panel-entered"); },200);
+setTimeout(function(){document.querySelectorAll(".panel")[0].classList.add("panel-entered");},200);
 
-// ── PORTFOLIO DATA ──
-// media items: {type:"yt", id:"VIDEO_ID"} or {type:"img", src:"img/file.jpg", caption:"Caption"}
-// YouTube fix: use video ID only — thumbnails load from youtube.com/vi/ID/hqdefault.jpg
-// clicking a video thumbnail opens it on YouTube in a new tab (avoids X-Frame-Options issue)
+// ══════════════════════════════════════════════════════════════
+// ── PORTFOLIO DATA  ──
+// Each media item can be one of:
+//   { type:"yt",    id:"VIDEO_ID",  label:"Optional label" }
+//   { type:"drive", id:"FILE_ID",   label:"..." }          ← Google Drive embed
+//   { type:"fb",    url:"POST_URL", thumb:"img/thumb.jpg", label:"..." }
+//   { type:"x",     url:"POST_URL", thumb:"img/thumb.jpg", label:"..." }
+//   { type:"img",   src:"img/file.jpg", caption:"..." }
+//
+// For fb / x: set thumb to a local screenshot if you have one, otherwise
+// leave it out (a platform icon will show instead).
+// ══════════════════════════════════════════════════════════════
 var projects=[
+  // ── 1. NWSC ──────────────────────────────────────────────
   {
     org:"National Water &amp; Sewerage Corporation",
-    title:"Website Management &amp; Digital Communications",
+    title:"Events, Branding &amp; Digital Communications",
     tag:"Web &amp; Digital",
-    role:"Website &amp; Graphics Officer",
-    year:"2014 &ndash; 2022",
-    desc:"Led digital communications for Uganda's national water utility, managing the corporate website, coordinating social media and producing multimedia materials that kept millions of customers and stakeholders informed across the country.",
-    deliverables:["Corporate website management &amp; updates","News writing &amp; photo stories","Social media strategy &amp; content","Staff communications training","Exhibition &amp; event coordination","Infographics &amp; visual design"],
-    tools:["WordPress","Joomla","Adobe Photoshop","Adobe Premiere","After Effects","Google Earth","Hootsuite"],
+    role:"Communications Officer",
+    year:"2016 &ndash; 2022",
+    desc:"Managed digital communications, event coverage and branding for Uganda's national water utility. Produced event promo videos and branded social media content that raised public awareness of NWSC services and events across Uganda.",
+    deliverables:["Event teaser &amp; promo videos","Social media content &amp; management","Photography &amp; videography","Press &amp; stakeholder communications","Digital content strategy"],
+    tools:["Adobe Premiere","Adobe After Effects","Adobe Photoshop","Canva","WordPress"],
     media:[
-      {type:"yt",id:"L-MkxODEZtE",label:"NWSC Video 1"},
-      {type:"yt",id:"ccMWDSOZ0Lw",label:"NWSC Video 2"}
+      {type:"yt", id:"TVA4S13veRQ", label:"AFWA Event Promo Teaser"}
     ],
     abbr:"NWSC",
+    grad:"linear-gradient(135deg,#0a1a2a 0%,#0d3050 100%)"
+  },
+  // ── 2. ACAV ───────────────────────────────────────────────
+  {
+    org:"Associazione Centro Aiuti Volontari",
+    title:"Donor Visibility &amp; Videography",
+    tag:"Communications &amp; Strategy",
+    role:"Senior Visibility &amp; Communications Officer",
+    year:"Dec 2024 &ndash; Apr 2026",
+    desc:"Developed visual and video content for ACAV Uganda's social media platforms, translating development and humanitarian work into engaging stories that increased awareness of refugee support, livelihoods, climate resilience, and community development initiatives.",
+    deliverables:["Campaign concept development","Social media graphics &amp; strategy","Short-form video production","Motion graphics","Infographics &amp; visual design","Donor visibility materials"],
+    tools:["Adobe Photoshop","Adobe Illustrator","Adobe Premiere","After Effects","Google Earth","Buffer"],
+    media:[
+      {type:"drive", id:"1sJ2DXrf5miKqBpEX-yCZxHFO-2uDAkSY", label:"SUIDAC Climate Change Video"}
+    ],
+    abbr:"ACAV",
     grad:"linear-gradient(135deg,#0d2030 0%,#1a4060 100%)"
   },
-  {
-    org:"Nature Uganda",
-    title:"Conservation Storytelling &amp; Social Media Campaigns",
-    tag:"Content &amp; Film",
-    role:"Communications Officer",
-    year:"2017 &ndash; 2019",
-    desc:"Produced conservation storytelling content for Uganda's leading birding and environmental organisation. Created multimedia narratives around wildlife, habitats and environmental advocacy to grow public engagement and donor interest.",
-    deliverables:["Conservation features &amp; articles","Social media campaign management","Short documentary production","Photography for campaigns","Website content management","Newsletters &amp; donor communications"],
-    tools:["Adobe Premiere","Canva","Adobe Photoshop","WordPress"],
-    media:[],
-    abbr:"NU",
-    grad:"linear-gradient(135deg,#0d1f0d 0%,#1a3d1a 100%)"
-  },
+  // ── 3. Plan International Uganda ─────────────────────────
   {
     org:"Plan International Uganda",
     title:"Programme Visibility &amp; Communications",
     tag:"Strategy &amp; Campaign",
     role:"Communications Officer",
-    year:"2015 &ndash; 2017",
+    year:"Nov 2023 &ndash; Nov 2024",
     desc:"Managed programme communications and visibility for Plan International Uganda across child rights, girls empowerment and development programming. Created content that amplified community voices to international donor and media audiences.",
     deliverables:["Programme visibility strategy","Donor &amp; media communications","Social media content production","Photography &amp; video production","Quarterly narrative reports","Event communications &amp; coverage"],
     tools:["Adobe Suite","Canva","Microsoft Office","Mailchimp"],
-    media:[],
+    media:[
+      {type:"x",
+       url:"https://x.com/PlanUganda/status/1843596440251367450/video/1",
+       thumb:"https://pbs.twimg.com/media/GZRVgIVWwAA5wuT?format=jpg&name=small",
+       label:"IDG 2024 — Buddy System Campaign Video"},
+      {type:"img",
+       src:"https://pbs.twimg.com/media/GZRVgIVWwAA5wuT?format=jpg&name=small",
+       caption:"International Day of the Girl 2024 — campaign imagery"}
+    ],
     abbr:"PI",
     grad:"linear-gradient(135deg,#2c1810 0%,#4a2a18 100%)"
   },
+  // ── 4. Nature Uganda ──────────────────────────────────────
   {
-    org:"Associazione Centro Aiuti Volontari",
-    title:"Senior Visibility &amp; Communications Strategy",
-    tag:"Print &amp; Film",
-    role:"Senior Visibility &amp; Communications Officer",
-    year:"2013 &ndash; 2015",
-    desc:"Led all communications for the Italian NGO's Uganda programmes, producing donor-facing visibility materials, coordinating media engagement and creating impact storytelling content that supported programme funding and accountability.",
-    deliverables:["Annual impact reports &amp; publications","Donor communications &amp; visibility","Media relations &amp; press materials","Social media management","Photography &amp; videography","Communications strategy"],
-    tools:["Adobe InDesign","Adobe Photoshop","Adobe Premiere","Canva","WordPress"],
-    media:[],
-    abbr:"ACAV",
-    grad:"linear-gradient(135deg,#1a0d0d 0%,#3d1a10 100%)"
-  },
-  {
-    org:"Young Water Professionals Uganda",
-    title:"Chapter Launch, Events &amp; Publicity",
-    tag:"Events &amp; Digital",
-    role:"Deputy Publicity Secretary (Volunteer)",
-    year:"2018 &ndash; 2022",
-    desc:"Managed communications and publicity for the YWP Uganda Chapter, building its public presence from the ground up. Coordinated the chapter launch, managed digital presence and drove membership growth through strategic publicity.",
-    deliverables:["Chapter launch event publicity","Social media management &amp; growth","Member communications &amp; newsletters","Event coordination &amp; coverage","Digital presence development","Partnership visibility"],
-    tools:["Canva","Hootsuite","Adobe Photoshop","Mailchimp"],
+    org:"Nature Uganda",
+    title:"Conservation Storytelling &amp; Social Media Campaigns",
+    tag:"Content &amp; Film",
+    role:"Communications Officer",
+    year:"June 2022 &ndash; Dec 2022",
+    desc:"Produced conservation storytelling content for Uganda's leading birding and environmental organisation. Created multimedia narratives around wildlife, habitats and environmental advocacy to grow public engagement and donor interest. Featured campaigns include Vulture Awareness Day, bird surveys and biodiversity highlights.",
+    deliverables:["Conservation features &amp; articles","Social media campaign management","Short documentary production","Photography for campaigns","Website content management","Newsletters &amp; donor communications"],
+    tools:["Adobe Premiere","Canva","Adobe Photoshop","Adobe After Effects","WordPress"],
     media:[
-      {type:"yt",id:"YxXWen0a1vM",label:"YWP Event"}
+      // Vulture Awareness Day campaign — add YouTube ID when available
+      // {type:"yt", id:"YOUR_VIDEO_ID", label:"Do you know the vulture species in Uganda? #VultureAwarenessDay"},
     ],
-    abbr:"YWP",
-    grad:"linear-gradient(135deg,#0d1f2c 0%,#1a3d4a 100%)"
+    abbr:"NU",
+    grad:"linear-gradient(135deg,#0d1f0d 0%,#1a3d1a 100%)"
+  },
+  // ── 5. Branding ───────────────────────────────────────────
+  {
+    org:"Various Clients",
+    title:"Graphic Design &amp; Branding",
+    tag:"Design &amp; Branding",
+    role:"Creative Consultant",
+    year:"2013 &ndash; Present",
+    desc:"Brand identity, banner design, print collateral and visual assets for NGOs, events and corporate clients across Uganda and beyond. Replace the placeholder image items below with your own design screenshots.",
+    deliverables:["Banner &amp; billboard design","Brand identity &amp; style guides","Event &amp; exhibition graphics","Social media templates","Print collateral &amp; publications","Infographics"],
+    tools:["Adobe Illustrator","Adobe Photoshop","Adobe InDesign","Canva"],
+    media:[
+      // Add your banner/design images below — use local paths or hosted URLs:
+      // {type:"img", src:"img/banner-nwsc.jpg",   caption:"NWSC Event Banner"},
+      // {type:"img", src:"img/banner-acav.jpg",   caption:"ACAV Programme Banner"},
+      // {type:"img", src:"img/identity-nu.jpg",   caption:"Nature Uganda Social Templates"},
+      // Or link a Drive folder preview:
+      // {type:"drive", id:"YOUR_DRIVE_FILE_ID", label:"Design Portfolio PDF"}
+    ],
+    abbr:"BD",
+    grad:"linear-gradient(135deg,#1a1207 0%,#3d2a08 100%)"
   }
 ];
 
 // ── MODAL LOGIC ──
-var curProj=0, curMedia=0, isTrans=false;
+var curProj=0,curMedia=0,isTrans=false;
 
-function openModal(i){ curProj=i; curMedia=0; renderModal(i,null); document.getElementById("modal").classList.add("open"); }
-function closeModal(){ document.getElementById("modal").classList.remove("open"); }
-function closeModalOutside(e){ if(e.target===document.getElementById("modal"))closeModal(); }
+function openModal(i){curProj=i;curMedia=0;renderModal(i,null);document.getElementById("modal").classList.add("open");}
+function closeModal(){document.getElementById("modal").classList.remove("open");}
+function closeModalOutside(e){if(e.target===document.getElementById("modal"))closeModal();}
 
 function navModal(dir){
-  if(isTrans)return; isTrans=true;
-  var mInfo=document.getElementById("mInfo");
-  var mVisual=document.getElementById("mVisual");
-  var ec=dir>0?"m-out-l":"m-out-r", nc=dir>0?"m-in-r":"m-in-l";
-  mInfo.classList.add(ec);
-  mVisual.style.opacity="0"; mVisual.style.transition="opacity .26s ease";
+  if(isTrans)return;isTrans=true;
+  var mInfo=document.getElementById("mInfo"),mVisual=document.getElementById("mVisual");
+  var ec=dir>0?"m-out-l":"m-out-r",nc=dir>0?"m-in-r":"m-in-l";
+  mInfo.classList.add(ec);mVisual.style.opacity="0";mVisual.style.transition="opacity .26s ease";
   setTimeout(function(){
-    mInfo.classList.remove(ec);
-    curProj=(curProj+dir+projects.length)%projects.length;
-    curMedia=0;
-    renderModal(curProj,nc);
-    mVisual.style.opacity="1";
-    setTimeout(function(){ mInfo.classList.remove(nc); isTrans=false; },340);
+    mInfo.classList.remove(ec);curProj=(curProj+dir+projects.length)%projects.length;curMedia=0;
+    renderModal(curProj,nc);mVisual.style.opacity="1";
+    setTimeout(function(){mInfo.classList.remove(nc);isTrans=false;},340);
   },280);
 }
 
 function navMedia(dir){
-  var p=projects[curProj];
-  if(!p.media||p.media.length<2)return;
-  curMedia=(curMedia+dir+p.media.length)%p.media.length;
-  renderVisual(p);
+  var p=projects[curProj];if(!p.media||p.media.length<2)return;
+  curMedia=(curMedia+dir+p.media.length)%p.media.length;renderVisual(p);
 }
+function navMediaTo(i){curMedia=i;renderVisual(projects[curProj]);}
 
 function patternSVG(){
-  return "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"media-ph-pat\" preserveAspectRatio=\"xMidYMid slice\">"
-    +"<defs><pattern id=\"mPat\" x=\"0\" y=\"0\" width=\"26\" height=\"26\" patternUnits=\"userSpaceOnUse\">"
-    +"<path d=\"M13,1L25,13L13,25L1,13Z\" fill=\"none\" stroke=\"#c8a96e\" stroke-width=\".8\"/>"
-    +"<circle cx=\"13\" cy=\"13\" r=\"1.5\" fill=\"#c8a96e\"/>"
-    +"<circle cx=\"0\" cy=\"0\" r=\"1.5\" fill=\"#c8a96e\"/><circle cx=\"26\" cy=\"26\" r=\"1.5\" fill=\"#c8a96e\"/>"
-    +"</pattern></defs><rect width=\"100%\" height=\"100%\" fill=\"url(#mPat)\"/></svg>";
+  return "<svg xmlns='http://www.w3.org/2000/svg' class='media-ph-pat' preserveAspectRatio='xMidYMid slice'>"
+    +"<defs><pattern id='mPat' x='0' y='0' width='26' height='26' patternUnits='userSpaceOnUse'>"
+    +"<path d='M13,1L25,13L13,25L1,13Z' fill='none' stroke='#c8a96e' stroke-width='.8'/>"
+    +"<circle cx='13' cy='13' r='1.5' fill='#c8a96e'/>"
+    +"<circle cx='0' cy='0' r='1.5' fill='#c8a96e'/><circle cx='26' cy='26' r='1.5' fill='#c8a96e'/>"
+    +"</pattern></defs><rect width='100%' height='100%' fill='url(#mPat)'/></svg>";
+}
+
+// ── SOURCE ICONS (inline SVG) ──
+function srcIcon(type){
+  if(type==="yt")    return "<svg viewBox='0 0 24 24' class='media-thumb-ico' fill='#f6af18'><path d='M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z'/><polygon points='9.75 15.02 15.5 12 9.75 8.98 9.75 15.02' fill='#0d0c0a' stroke='none'/></svg>";
+  if(type==="drive") return "<svg viewBox='0 0 24 24' class='media-thumb-ico' fill='none' stroke='#1a73e8' stroke-width='1.5'><path d='M12 2L2 19h20L12 2z'/><path d='M2 19l5-9 5 9'/><path d='M22 19l-5-9-5 9'/></svg>";
+  if(type==="fb")    return "<svg viewBox='0 0 24 24' class='media-thumb-ico' fill='#1877f2'><path d='M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z'/></svg>";
+  if(type==="x")     return "<svg viewBox='0 0 24 24' class='media-thumb-ico' fill='var(--white)'><path d='M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.742l7.741-8.851L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z'/></svg>";
+  return "<svg viewBox='0 0 24 24' class='media-thumb-ico' fill='none' stroke='var(--sand)' stroke-width='1.5'><rect x='3' y='3' width='18' height='18' rx='2'/><circle cx='8.5' cy='8.5' r='1.5'/><polyline points='21 15 16 10 5 21'/></svg>";
+}
+
+function badgeHTML(type){
+  var labels={yt:"YouTube",drive:"Drive",fb:"Facebook",x:"X / Twitter",img:""};
+  if(type==="img"||!labels[type])return "";
+  return "<span class='src-badge "+type+"'>"+labels[type]+"</span>";
 }
 
 function renderVisual(p){
   var mVisual=document.getElementById("mVisual");
   if(!p.media||p.media.length===0){
-    mVisual.innerHTML="<div class=\"media-ph\" style=\"background:"+p.grad+"\">"
+    mVisual.innerHTML="<div class='media-ph' style='background:"+p.grad+"'>"
       +patternSVG()
-      +"<div class=\"media-ph-abbr\">"+p.abbr+"</div>"
-      +"<div style=\"width:28px;height:1px;background:#f6af18;opacity:.4;margin:.5rem 0\"></div>"
-      +"<div class=\"media-ph-hint\">Add images or video here</div>"
+      +"<div class='media-ph-abbr'>"+p.abbr+"</div>"
+      +"<div style='width:28px;height:1px;background:#f6af18;opacity:.4;margin:.5rem 0'></div>"
+      +"<div class='media-ph-hint'>Add media to this project</div>"
       +"</div>";
     return;
   }
   var item=p.media[curMedia];
+  // Build thumbnail bar
   var navBar="";
   if(p.media.length>1){
     var thumbs=p.media.map(function(m,i){
-      var tc=i===curMedia?" active":"";
-      if(m.type==="yt") return "<div class=\"media-thumb"+tc+"\" onclick=\"navMediaTo("+i+")\">"
-        +"<div class=\"media-thumb-yt\"><svg viewBox=\"0 0 24 24\"><polygon points=\"5,3 19,12 5,21\" fill=\"#f6af18\"/></svg></div></div>";
-      return "<div class=\"media-thumb"+tc+"\" onclick=\"navMediaTo("+i+")\"><img src=\""+m.src+"\" alt=\"\"></div>";
+      var ac=i===curMedia?" active":"";
+      return "<div class='media-thumb"+ac+"' onclick='navMediaTo("+i+")'>"+srcIcon(m.type||"img")+"</div>";
     }).join("");
-    navBar="<div class=\"media-nav\">"
-      +"<button class=\"media-nav-btn\" onclick=\"navMedia(-1)\"><svg viewBox=\"0 0 24 24\"><polyline points=\"15 18 9 12 15 6\"/></svg></button>"
-      +"<div class=\"media-thumbs\">"+thumbs+"</div>"
-      +"<span class=\"media-nav-count\">"+(curMedia+1)+"/"+p.media.length+"</span>"
-      +"<button class=\"media-nav-btn\" onclick=\"navMedia(1)\"><svg viewBox=\"0 0 24 24\"><polyline points=\"9 18 15 12 9 6\"/></svg></button>"
+    navBar="<div class='media-nav'>"
+      +"<button class='media-nav-btn' onclick='navMedia(-1)'><svg viewBox='0 0 24 24'><polyline points='15 18 9 12 15 6'/></svg></button>"
+      +"<div class='media-thumbs'>"+thumbs+"</div>"
+      +"<span class='media-nav-count'>"+(curMedia+1)+"/"+p.media.length+"</span>"
+      +"<button class='media-nav-btn' onclick='navMedia(1)'><svg viewBox='0 0 24 24'><polyline points='9 18 15 12 9 6'/></svg></button>"
       +"</div>";
   }
-  var mainHTML="";
-  if(item.type==="yt"){
-    // Use thumbnail + link instead of iframe (avoids X-Frame-Options restriction)
-    var ytId=item.id;
-    mainHTML="<a class=\"yt-thumb\" href=\"https://www.youtube.com/watch?v="+ytId+"\" target=\"_blank\" rel=\"noopener\">"
-      +"<img src=\"https://img.youtube.com/vi/"+ytId+"/hqdefault.jpg\" alt=\""+( item.label||"Video")+"\""
-      +" onerror=\"this.src='https://img.youtube.com/vi/"+ytId+"/0.jpg'\">"
-      +"<div class=\"yt-play\"><div class=\"yt-play-btn\">"
-      +"<svg viewBox=\"0 0 24 24\"><polygon points=\"5,3 19,12 5,21\"/></svg>"
-      +"</div></div>"
-      +"<div class=\"yt-label\">Watch on YouTube &nbsp;&#8599;</div>"
-      +"</a>";
-  } else {
-    mainHTML="<img class=\"modal-main-img\" src=\""+item.src+"\" alt=\""+(item.caption||p.title)+"\">";
-  }
-  mVisual.innerHTML="<div class=\"modal-visual-inner\">"+mainHTML+navBar+"</div>";
-}
 
-function navMediaTo(i){ curMedia=i; renderVisual(projects[curProj]); }
+  var mainHTML="";
+  var type=item.type||"img";
+
+  if(type==="yt"){
+    // Thumbnail + link to YouTube (avoids X-Frame-Options)
+    var ytId=item.id;
+    mainHTML="<a class='yt-thumb' href='https://www.youtube.com/watch?v="+ytId+"' target='_blank' rel='noopener'>"
+      +"<img src='https://img.youtube.com/vi/"+ytId+"/hqdefault.jpg' alt='"+(item.label||"Video")+"'"
+      +" onerror=\"this.src='https://img.youtube.com/vi/"+ytId+"/0.jpg'\">"
+      +"<div class='yt-play'><div class='yt-play-btn'>"
+      +"<svg viewBox='0 0 24 24'><polygon points='5,3 19,12 5,21'/></svg>"
+      +"</div></div>"
+      +badgeHTML("yt")
+      +"<div class='yt-label'>Watch on YouTube &nbsp;&#8599;</div>"
+      +"</a>";
+
+  } else if(type==="drive"){
+    // Google Drive embedded preview (video or doc)
+    var driveId=item.id;
+    mainHTML="<div style='position:relative;width:100%;height:100%'>"
+      +"<iframe class='drive-frame' src='https://drive.google.com/file/d/"+driveId+"/preview' allowfullscreen></iframe>"
+      +badgeHTML("drive")
+      +"<a class='social-open-btn' href='https://drive.google.com/file/d/"+driveId+"/view' target='_blank' rel='noopener'>Open in Drive &#8599;</a>"
+      +"</div>";
+
+  } else if(type==="fb"){
+    // Facebook post/reel thumbnail + link
+    var fbUrl=item.url||"";
+    var fbThumb=item.thumb||"";
+    if(fbThumb){
+      mainHTML="<div style='position:relative;width:100%;height:100%'>"
+        +"<img class='modal-main-img' src='"+fbThumb+"' alt='"+(item.label||"Facebook Post")+"'>"
+        +badgeHTML("fb")
+        +"<a class='social-open-btn' href='"+fbUrl+"' target='_blank' rel='noopener'>View on Facebook &#8599;</a>"
+        +"</div>";
+    } else {
+      mainHTML="<div style='position:relative;width:100%;height:100%;background:#0d0c0a;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem'>"
+        +"<svg viewBox='0 0 24 24' style='width:40px;height:40px' fill='#1877f2'><path d='M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z'/></svg>"
+        +"<span style='font-family:Montserrat,sans-serif;font-size:.65rem;letter-spacing:.12em;color:var(--muted)'>"+(item.label||"Facebook Post")+"</span>"
+        +"<a class='social-open-btn' href='"+fbUrl+"' target='_blank' rel='noopener'>View on Facebook &#8599;</a>"
+        +"</div>";
+    }
+
+  } else if(type==="x"){
+    // X (Twitter) post thumbnail + link
+    var xUrl=item.url||"";
+    var xThumb=item.thumb||"";
+    if(xThumb){
+      mainHTML="<div style='position:relative;width:100%;height:100%'>"
+        +"<img class='modal-main-img' src='"+xThumb+"' alt='"+(item.label||"X Post")+"'>"
+        +badgeHTML("x")
+        +"<a class='social-open-btn' href='"+xUrl+"' target='_blank' rel='noopener'>View on X &#8599;</a>"
+        +"</div>";
+    } else {
+      mainHTML="<div style='position:relative;width:100%;height:100%;background:#0d0c0a;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem'>"
+        +"<svg viewBox='0 0 24 24' style='width:36px;height:36px' fill='var(--white)'><path d='M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.742l7.741-8.851L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z'/></svg>"
+        +"<span style='font-family:Montserrat,sans-serif;font-size:.65rem;letter-spacing:.12em;color:var(--muted)'>"+(item.label||"X Post")+"</span>"
+        +"<a class='social-open-btn' href='"+xUrl+"' target='_blank' rel='noopener'>View on X &#8599;</a>"
+        +"</div>";
+    }
+
+  } else {
+    // Plain image
+    mainHTML="<img class='modal-main-img' src='"+(item.src||"")+"' alt='"+(item.caption||p.title)+"'>";
+  }
+
+  mVisual.innerHTML="<div class='modal-visual-inner'>"+mainHTML+navBar+"</div>";
+}
 
 function renderModal(i,enterCls){
   var p=projects[i];
   document.getElementById("mTag").innerHTML=p.tag;
   document.getElementById("mCount").textContent=String(i+1).padStart(2,"0")+" / "+String(projects.length).padStart(2,"0");
   renderVisual(p);
-  var delivs=p.deliverables.map(function(d){ return "<div class=\"m-deliverable\">"+d+"</div>"; }).join("");
-  var tools=p.tools.map(function(t){ return "<span class=\"org-pill\" style=\"font-size:.58rem;padding:.25rem .7rem;opacity:1\">"+t+"</span>"; }).join("");
-  var info="<div class=\"m-org\">"+p.org+"</div>"
-    +"<div class=\"m-title\">"+p.title+"</div>"
-    +"<div class=\"m-meta\">"+p.role+" &nbsp;&middot;&nbsp; "+p.year+"</div>"
-    +"<div class=\"m-desc\">"+p.desc+"</div>"
-    +"<div style=\"margin-bottom:.9rem\"><div class=\"m-sec-head\">Deliverables</div>"+delivs+"</div>"
-    +"<div><div class=\"m-sec-head\">Tools</div><div class=\"m-tools\">"+tools+"</div></div>";
+  var delivs=p.deliverables.map(function(d){return "<div class='m-deliverable'>"+d+"</div>";}).join("");
+  var tools=p.tools.map(function(t){return "<span class='org-pill' style='font-size:.58rem;padding:.25rem .7rem;opacity:1'>"+t+"</span>";}).join("");
+  var info="<div class='m-org'>"+p.org+"</div>"
+    +"<div class='m-title'>"+p.title+"</div>"
+    +"<div class='m-meta'>"+p.role+" &nbsp;&middot;&nbsp; "+p.year+"</div>"
+    +"<div class='m-desc'>"+p.desc+"</div>"
+    +"<div style='margin-bottom:.9rem'><div class='m-sec-head'>Deliverables</div>"+delivs+"</div>"
+    +"<div><div class='m-sec-head'>Tools</div><div class='m-tools'>"+tools+"</div></div>";
   var mInfo=document.getElementById("mInfo");
   mInfo.innerHTML=info;
-  if(enterCls){ mInfo.classList.add(enterCls); setTimeout(function(){ mInfo.classList.remove(enterCls); },350); }
+  if(enterCls){mInfo.classList.add(enterCls);setTimeout(function(){mInfo.classList.remove(enterCls);},350);}
 }
 
-
-/*// FRACTAL TREE */
+// ── PEN-DRAW LOGO ENGINE ──
+// Uses requestAnimationFrame to animate stroke-dashoffset from full length → 0,
+// tracks point-on-path for the nib dot, then fades and loops.
 (function(){
-  var canvas=document.getElementById("heroFractal");
-  if(!canvas)return;
-  var ctx=canvas.getContext("2d"); var t=0;
-  function resize(){ canvas.width=canvas.offsetWidth||window.innerWidth; canvas.height=canvas.offsetHeight||window.innerHeight; }
+  var path=document.getElementById("penPath");
+  var nib=document.getElementById("penNib");
+  var wordmark=document.getElementById("logoWordmark");
+  if(!path||!nib)return;
+
+  var totalLen, rafId, startTime;
+  var DRAW_DUR=5000, HOLD_DUR=1800, FADE_DUR=600, PAUSE_DUR=500;
+  var phase="draw"; // draw | hold | fade | pause
+
+  function init(){
+    totalLen=path.getTotalLength();
+    path.style.strokeDasharray=totalLen;
+    path.style.strokeDashoffset=totalLen;
+    path.style.opacity=1;
+    if(nib){nib.style.opacity=0;}
+    if(wordmark){wordmark.style.opacity=0;wordmark.style.transition="none";}
+    phase="draw";
+    startTime=null;
+    rafId=requestAnimationFrame(tick);
+  }
+
+  function easeInOut(t){return t<0.5?2*t*t:1-Math.pow(-2*t+2,2)/2;}
+
+  function tick(now){
+    if(!startTime)startTime=now;
+    var elapsed=now-startTime;
+
+    if(phase==="draw"){
+      var p=Math.min(elapsed/DRAW_DUR,1);
+      var e=easeInOut(p);
+      path.style.strokeDashoffset=totalLen*(1-e);
+      // nib position
+      var nibLen=totalLen*e;
+      try{
+        var pt=path.getPointAtLength(nibLen);
+        nib.setAttribute("cx",pt.x);
+        nib.setAttribute("cy",pt.y);
+        nib.style.opacity=0.9;
+      }catch(ex){}
+      if(p>=1){phase="hold";startTime=now;}
+
+    } else if(phase==="hold"){
+      nib.style.opacity=0;
+      if(wordmark){wordmark.style.transition="opacity 0.6s ease";wordmark.style.opacity=1;}
+      if(elapsed>HOLD_DUR){phase="fade";startTime=now;}
+
+    } else if(phase==="fade"){
+      var p2=Math.min(elapsed/FADE_DUR,1);
+      path.style.opacity=1-p2;
+      if(wordmark){wordmark.style.opacity=1-p2;}
+      if(p2>=1){phase="pause";startTime=now;path.style.opacity=0;}
+
+    } else if(phase==="pause"){
+      if(elapsed>PAUSE_DUR){cancelAnimationFrame(rafId);init();return;}
+    }
+    rafId=requestAnimationFrame(tick);
+  }
+
+  // Start after a short delay so panel has rendered
+  setTimeout(init,400);
+})();
+
+// ── FRACTAL TREE ──
+(function(){
+  var canvas=document.getElementById("heroFractal");if(!canvas)return;
+  var ctx=canvas.getContext("2d");var t=0;
+  function resize(){canvas.width=canvas.offsetWidth||window.innerWidth;canvas.height=canvas.offsetHeight||window.innerHeight;}
   function branch(x,y,angle,depth,len){
     if(depth<1)return;
     var sway=Math.sin(t*0.00085+depth*0.9)*0.18;
-    var nx=x+Math.cos(angle+sway)*len, ny=y+Math.sin(angle+sway)*len;
-    var alpha=0.028*depth, rgb=depth>5?"200,169,110":"246,175,24";
-    ctx.beginPath(); ctx.moveTo(x,y); ctx.lineTo(nx,ny);
+    var nx=x+Math.cos(angle+sway)*len,ny=y+Math.sin(angle+sway)*len;
+    var alpha=0.028*depth,rgb=depth>5?"200,169,110":"246,175,24";
+    ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(nx,ny);
     ctx.lineWidth=Math.max(0.4,depth*0.48);
-    ctx.strokeStyle="rgba("+rgb+","+alpha+")"; ctx.stroke();
+    ctx.strokeStyle="rgba("+rgb+","+alpha+")";ctx.stroke();
     var spread=0.38+Math.sin(t*0.0005+depth*0.3)*0.07;
     branch(nx,ny,angle-spread,depth-1,len*0.68);
     branch(nx,ny,angle+spread,depth-1,len*0.68);
@@ -884,12 +1048,9 @@ function renderModal(i,enterCls){
     branch(w*.38,h,-Math.PI/2-.1,4,len*.3);
     branch(w*.65,h,-Math.PI/2+.08,4,len*.3);
   }
-  function loop(){ t++; draw(); requestAnimationFrame(loop); }
-  resize(); window.addEventListener("resize",resize); loop();
+  function loop(){t++;draw();requestAnimationFrame(loop);}
+  resize();window.addEventListener("resize",resize);loop();
 })();
-
-
-
 </script>
 </body>
 </html>
