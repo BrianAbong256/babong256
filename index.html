@@ -89,9 +89,11 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
 .org-pill.visible{opacity:1}
 
 /* ABOUT PIC */
-.about-pic{position:fixed; scale: 20%; z-index:1000;animation:fadeUp .65s .25s ease both;}
-
- 
+.about-pic-wrap{position:absolute;right:0;top:0;bottom:0;width:34%;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:2rem;background:linear-gradient(to right,transparent,var(--earth) 25%);z-index:2}
+.about-img-diamond{width:140px;height:140px;clip-path:polygon(50% 0%,100% 50%,50% 100%,0% 50%);overflow:hidden;display:flex;align-items:center;justify-content:center;border:1px solid var(--bark);animation:fadeUp .8s .3s ease both}
+.about-img-diamond img{width:100%;height:100%;object-fit:cover;display:block}
+.stat-item .num{font-family:"Montserrat",sans-serif;font-size:3.2rem;color:var(--orange);line-height:1;font-weight:700;text-align:center}
+.stat-item .lbl{font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:.2rem;text-align:center;font-family:"Montserrat",sans-serif}
 
 /* DOWNLOAD CV BUTTON */
 .cv-btn{display:inline-flex;align-items:center;gap:.6rem;margin-top:1.2rem;font-family:"Montserrat",sans-serif;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--black);background:var(--orange);border:none;padding:.55rem 1.1rem;cursor:pointer;text-decoration:none;font-weight:600;transition:background .25s,transform .2s}
@@ -441,7 +443,6 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
   <div class="inner">
     <div class="section-label anim-1">About</div>
     <h2 class="anim-2">Newsroom trained.<br><em>Mission driven.</em></h2>
-    <div class="about-pic"><img src="about-pic-png" alt="Brian Abong"></div>
     <p class="anim-3">I am a communications specialist with roots in the newsroom and a career built across Uganda&rsquo;s water, conservation and development sectors. I bring a journalist&rsquo;s instinct for the right story at the right moment &mdash; and a designer&rsquo;s eye for making it land.</p>
     <p class="anim-4">From breaking news to brand strategy, annual reports to short documentaries, I turn complex missions into clear, compelling human stories. Now pivoting to remote consulting, I help organisations communicate with clarity, creativity and cultural resonance.</p>
     <div class="orgs anim-5" id="aboutPills">
@@ -463,9 +464,9 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
   </div>
   <!-- About pic + stats column -->
   <div class="about-pic-wrap">
-    <!--div class="about-img-diamond">
+    <div class="about-img-diamond">
       <img src="BAbong Profile-01.png" alt="Brian Abong" onerror="this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:var(--bark);font-family:Montserrat,sans-serif;font-size:2rem;font-weight:700;color:var(--orange);opacity:.6\'>BA</div>'">
-  </div-->
+    </div>
     <div class="stat-item"><div class="num" data-target="9" id="statOrgs">0</div><div class="lbl">Organisations</div></div>
     <div class="stat-item"><div class="num" data-target="6" id="statSectors">0</div><div class="lbl">Sectors</div></div>
     <div class="stat-item"><div class="num" data-target="11" id="statYears">0</div><div class="lbl">Years</div></div>
