@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Brian Abong - Communications Specialist and Creative Consultant.">
 <title>Brian Abong - Communications &amp; Creative</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MN4VT1MK03"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MN4VT1MK03');
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -19,7 +35,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
 
 /* STAGE */
 #stage{display:flex;width:600%;height:100vh;transition:transform .9s cubic-bezier(.77,0,.18,1)}
-.panel{width:100vw;height:100vh;flex-shrink:0;position:relative;overflow:hidden}
+.panel{width:100vw;height:100vh;flex-shrink:0;position:relative;overflow:hidden;contain:paint;isolation:isolate}
 
 /* NAV */
 #nav{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);display:flex;gap:10px;z-index:100;align-items:center}
@@ -159,7 +175,8 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
 
 /* CONTACT LOGO PANEL */
-.logo-panel{position:absolute;right:0;top:0;bottom:0;width:44%;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden}
+.logo-panel{position:absolute;right:0;top:0;bottom:0;width:44%;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;visibility:hidden}
+.panel-entered .logo-panel{visibility:visible}
 .abong-logo{width:55%;height:auto;display:block;max-width:220px}
 .logo-path{fill:none;stroke:#f6af18;stroke-width:7;stroke-dasharray:2258.29;stroke-dashoffset:2258.29;animation:drawLogo 6.5s cubic-bezier(.65,0,.35,1) infinite}
 @keyframes drawLogo{
@@ -344,6 +361,12 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
     flex-shrink:0;
   }
   .modal-info{padding:1.25rem;flex:1}
+  /* Drive embeds need a taller, ratio-based viewport on mobile so video isn't cropped */
+  .modal-visual.media-drive{
+    height:62vw;
+    min-height:62vw;
+    max-height:50vh;
+  }
   /* Make media nav more touch-friendly on mobile */
   .media-nav-btn{width:36px;height:36px}
   .media-thumb{width:44px;height:44px}
@@ -351,7 +374,36 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
 
 @media(max-width:480px){
   .modal-visual{height:200px;min-height:200px}
+  .modal-visual.media-drive{height:62vw;min-height:62vw;max-height:46vh}
 }
+
+/* SITE FOOTER */
+.site-footer{
+  position:fixed;
+  bottom:.5rem;
+  left:50%;
+  transform:translateX(-50%);
+  font-family:"Montserrat",sans-serif;
+  font-size:.5rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--muted);
+  opacity:.45;
+  z-index:50;
+  pointer-events:none;
+  white-space:nowrap;
+}
+@media(max-width:768px){
+  .site-footer{
+    position:static;
+    transform:none;
+    text-align:center;
+    padding:1.5rem 0 .5rem;
+    opacity:.4;
+  }
+  .p-contact .inner .site-footer{display:block}
+}
+
 </style>
 </head>
 <body>
@@ -585,7 +637,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
       </a>
       <a class="clink" href="https://wa.me/256741857948">
         <div class="cl-ico"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.73a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-        <div><div class="cl-label">WhatsApp &amp; Phone</div><div class="cl-val">+256 741 857 849 &nbsp;&middot;&nbsp; +256 760 370 866</div></div>
+        <div><div class="cl-label">WhatsApp &amp; Phone</div><div class="cl-val">+256 741 857 948 &nbsp;&middot;&nbsp; +256 760 370 866</div></div>
       </a>
       <a class="clink" href="https://www.youtube.com/@brianabong8612" target="_blank" rel="noopener">
         <div class="cl-ico"><svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="var(--black)" stroke="none"/></svg></div>
@@ -593,9 +645,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
       </a>
     </div>
     <div class="availability anim-4"><div class="avail-dot"></div>Available for new projects</div>
-  </div>
-
-  <div class="site-footer anim-5">&copy; Designed by Brian Abong 2026</div>
+    <div class="site-footer anim-5">&copy; Designed by Brian Abong 2026</div>
   </div>
 
   <!-- ANIMATED PEN-DRAW LOGO -->
@@ -936,6 +986,7 @@ function badgeHTML(type){
 
 function renderVisual(p){
   var mVisual=document.getElementById("mVisual");
+  mVisual.classList.remove("media-drive");
   if(!p.media||p.media.length===0){
     mVisual.innerHTML="<div class='media-ph' style='background:"+p.grad+"'>"
       +patternSVG()
@@ -988,6 +1039,7 @@ function renderVisual(p){
       +"</div>";
 
   } else if(type==="drive"){
+    mVisual.classList.add("media-drive");
     var driveId=item.id;
     mainHTML="<div style='position:relative;width:100%;height:100%'>"
       +"<iframe class='drive-frame' src='https://drive.google.com/file/d/"+driveId+"/preview' allowfullscreen></iframe>"
