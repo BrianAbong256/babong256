@@ -725,7 +725,6 @@ var dots=document.querySelectorAll(".dot");
 var curEl=document.getElementById("cur");
 var fills=document.querySelectorAll(".sb-fill");
 var skillsAnimated=false,statsAnimated=false;
-     var skillsAnimated=false,statsAnimated=false;
 var panelNames = ["Home","About","Services","Work","Skills","Contact"];
 
 function sendPanelView(i){
@@ -755,6 +754,8 @@ function goTo(n){
     triggerPills(panels[cur]);
   },80);
 }
+
+sendPanelView(0);
 
      sendPanelView(0);
 setTimeout(function(){document.querySelectorAll(".panel")[0].classList.add("panel-entered");},200);
