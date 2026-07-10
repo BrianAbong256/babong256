@@ -724,18 +724,18 @@ var stage=document.getElementById("stage");
 var dots=document.querySelectorAll(".dot");
 var curEl=document.getElementById("cur");
 var fills=document.querySelectorAll(".sb-fill");
-var skillsAnimated=false,statsAnimated=false;
-var panelNames = ["Home","About","Services","Work","Skills","Contact"];
+//var skillsAnimated=false,statsAnimated=false;
+//var panelNames = ["Home","About","Services","Work","Skills","Contact"];
 
-function sendPanelView(i){
-  if (typeof gtag === "function") {
-    gtag('event', 'page_view', {
-      page_title: panelNames[i],
-      page_path: '/' + panelNames[i].toLowerCase(),
-      page_location: window.location.origin + window.location.pathname + '#' + panelNames[i].toLowerCase()
-    });
-  }
-}
+//function sendPanelView(i){
+  //if (typeof gtag === "function") {
+   // gtag('event', 'page_view', {
+      //page_title: panelNames[i],
+     // page_path: '/' + panelNames[i].toLowerCase(),
+     // page_location: window.location.origin + window.location.pathname + '#' + panelNames[i].toLowerCase()
+   // });
+ // }
+//}
 
 function goTo(n){
   if(n<0||n>=total)return;
