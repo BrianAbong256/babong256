@@ -10,6 +10,8 @@
 <!-- ════════════════════════════════════════════════════════
      GOOGLE ANALYTICS (GA4)
      ════════════════════════════════════════════════════════ -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MN4VT1MK03"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -760,22 +762,7 @@ sendPanelView(0);
      sendPanelView(0);
 setTimeout(function(){document.querySelectorAll(".panel")[0].classList.add("panel-entered");},200);
 setTimeout(function(){document.querySelectorAll(".panel")[0].classList.add("panel-entered");},200);
-function goTo(n){
-  if(n<0||n>=total)return;
-  var panels=document.querySelectorAll(".panel");
-  panels[cur].classList.remove("panel-entered");
-  resetPills(panels[cur]);
-  cur=n;
-  stage.style.transform="translateX(calc(-"+(100/6*cur)+"% ))";
-  dots.forEach(function(d,i){d.classList.toggle("active",i===cur);});
-  curEl.textContent=String(cur+1).padStart(2,"0");
-  setTimeout(function(){
-    panels[cur].classList.add("panel-entered");
-    if(cur===1)triggerAbout();
-    if(cur===4)triggerSkills();
-    triggerPills(panels[cur]);
-  },80);
-}
+
 
 function resetPills(panel){
   panel.querySelectorAll(".org-pill").forEach(function(p){
