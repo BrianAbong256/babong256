@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "title": "Brian Abong - Kommunikation & Kreation",
+    "description": "Brian Abong - Kommunikationsspezialist und Kreativberater mit Sitz in Uganda. Strategische Kommunikation, Content-Erstellung und Kreativberatung für NGOs, Entwicklungsorganisationen und Marken."
+  },
+  "hero": {
+    "tag": "Kommunikation · Kreation · Strategie",
+    "title_line1": "Geschichten,",
+    "title_pre": "die",
+    "title_em": "berühren",
+    "title_line3": "Menschen bewegen.",
+    "sub": "Strategische Kommunikation, Content-Erstellung und Kreativberatung für NGOs, Entwicklungsorganisationen und Marken.",
+    "cta": "Meine Arbeiten entdecken",
+    "years_number": "11",
+    "years_label1": "Jahre",
+    "years_label2": "Erfahrung in Uganda und darüber hinaus",
+    "scroll_hint": "Pfeile oder Tastatur zum Navigieren nutzen"
+  },
+  "about": {
+    "label": "Über mich",
+    "h2_line1": "In der Redaktion ausgebildet.",
+    "h2_em": "Von der Mission getrieben.",
+    "p1": "Ich bin Kommunikationsspezialist mit Wurzeln in der Redaktion und einer Karriere in den Bereichen Wasser, Naturschutz und Entwicklung in Uganda. Ich bringe den journalistischen Instinkt für die richtige Geschichte im richtigen Moment mit — und den Blick eines Gestalters dafür, sie wirken zu lassen.",
+    "p2": "Von Eilmeldungen bis zur Markenstrategie, von Jahresberichten bis zu Kurzdokumentationen — ich verwandle komplexe Missionen in klare, überzeugende menschliche Geschichten. Im Übergang zur ortsunabhängigen Beratung helfe ich Organisationen, mit Klarheit, Kreativität und kultureller Resonanz zu kommunizieren.",
+    "cv_button": "Lebenslauf herunterladen",
+    "stat_orgs": "Organisationen",
+    "stat_sectors": "Sektoren",
+    "stat_years": "Jahre"
+  },
+  "services": {
+    "label": "Leistungen",
+    "h2_line1": "Was ich mitbringe",
+    "h2_em": "an den Tisch",
+    "items": [
+      { "title": "Content & Texterstellung", "desc": "Nachrichten, Reportagen, Pressemitteilungen, Webtexte, Jahresberichte und Social Media — Geschichten, die die richtige Zielgruppe erreichen und zum Handeln bewegen." },
+      { "title": "Bild & Bewegtbild", "desc": "Standbild- und Motion-Grafiken, Animation, Social-Media-Videos, Kurzdokumentationen, Infografiken und Ausstellungsmaterialien, die Ihre Botschaft unübersehbar machen." },
+      { "title": "Web & Digital", "desc": "Webdesign und -verwaltung, SEO-optimierte Inhalte, Social-Media-Strategie und -Management sowie digitale Präsenz auf mehreren Plattformen." },
+      { "title": "Strategie & Training", "desc": "Kommunikationsrahmen, Kapazitätsaufbau für Mitarbeitende, Veranstaltungsmanagement, Ausstellungskoordination und Sichtbarkeitsstrategie für Programme." }
+    ]
+  },
+  "work": {
+    "label": "Ausgewählte Arbeiten",
+    "h2_line1": "Projekte &",
+    "h2_em": "Kampagnen"
+  },
+  "skills": {
+    "label": "Werkzeuge",
+    "h2_line1": "Fähigkeiten &",
+    "h2_em": "Expertise",
+    "group1_title": "Kommunikation",
+    "group2_title": "Kreativ & Technisch",
+    "levels": { "expert": "Experte", "advanced": "Fortgeschritten", "proficient": "Kompetent" },
+    "bars1": ["Nachrichten- & Feature-Schreiben", "Texten & Lektorat", "Social-Media-Management", "Kommunikationsstrategie", "Mitarbeiterschulung"],
+    "bars2": ["Grafikdesign", "Videoproduktion & -schnitt", "Webdesign & -verwaltung", "Fotografie", "Veranstaltungsmanagement"]
+  },
+  "contact": {
+    "label": "Kontakt",
+    "h2_line1": "Lassen Sie uns",
+    "h2_pre": "etwas",
+    "h2_em": "Großartiges bauen!",
+    "tagline": "Offen für Fernaufträge, Beratung und Teilzeitrollen.",
+    "email_label": "E-Mail",
+    "linkedin_label": "LinkedIn",
+    "whatsapp_label": "WhatsApp & Telefon",
+    "youtube_label": "YouTube-Kanal",
+    "availability": "Verfügbar für neue Projekte",
+    "footer": "© Gestaltet von Brian Abong 2026"
+  },
+  "nav": { "prev": "Zurück", "next": "Weiter", "logo": "B. ABONG" },
+  "modal": {
+    "my_role": "Meine Rolle",
+    "challenge": "Die Herausforderung",
+    "contribution": "Mein konkreter Beitrag",
+    "outcome": "Das Ergebnis",
+    "deliverables": "Leistungen",
+    "tools": "Werkzeuge"
+  },
+  "projects": [
+    {
+      "tag": "Web & Digital",
+      "role": "Website- & Grafikreferent",
+      "year": "Aug. 2014 – Juni 2022",
+      "desc": "Verantwortete digitale Kommunikation, Veranstaltungsberichterstattung und Markenbildung für Ugandas nationalen Wasserversorger. Produzierte Event-Promo-Videos und markengerechte Social-Media-Inhalte, die das öffentliche Bewusstsein für NWSC-Dienstleistungen und -Veranstaltungen in ganz Uganda stärkten.",
+      "myRole": "Als Website- und Grafikreferent verantwortete ich die digitale Präsenz der NWSC von A bis Z — von Website-Inhalten und Updates bis zu Grafiken für interne und öffentliche Kampagnen, in enger Zusammenarbeit mit technischen und Event-Teams.",
+      "challenge": "Die Arbeit der NWSC ist weitgehend technisch und infrastrukturbezogen, was es schwierig machte, sie für den Alltag der Ugander relevant und ansprechend zu kommunizieren, während Veranstaltungen starke Sichtbarkeit brauchten, um Besucherzahlen und öffentliches Bewusstsein zu steigern.",
+      "contribution": "Ich filmte und schnitt Event-Promo-Videos (einschließlich des AFWA-Event-Teasers), betreute die Unternehmenswebsite und produzierte markengerechte Social-Media-Grafiken und -Kampagnen, die technische Versorgungsarbeit in zugängliche öffentliche Botschaften übersetzten.",
+      "outcome": "Stärkte das öffentliche Bewusstsein für NWSC-Dienstleistungen und -Veranstaltungen, festigte die digitale Präsenz und Markenpräsenz der Organisation und lieferte eine Reihe von Werbevideo- und Grafikinhalten, die bei zahlreichen öffentlichen Veranstaltungen eingesetzt wurden.",
+      "deliverables": ["Event-Teaser- & Promo-Videos", "Social-Media-Inhalte & -Management", "Fotografie & Videografie", "Presse- & Stakeholder-Kommunikation", "Digitale Content-Strategie"]
+    },
+    {
+      "tag": "Kommunikation & Strategie",
+      "role": "Senior Referent für Sichtbarkeit & Kommunikation",
+      "year": "Dez. 2024 – Apr. 2026",
+      "desc": "Entwickelte visuelle, redaktionelle und Video-Inhalte für die Social-Media-Kanäle von ACAV Uganda und übersetzte humanitäre Entwicklungsarbeit in fesselnde Geschichten, die das Bewusstsein für Flüchtlingsunterstützung, Existenzsicherung, Klimaresilienz und Gemeindeentwicklung stärkten.",
+      "myRole": "Als Senior Referent für Sichtbarkeit & Kommunikation leitete ich die Storytelling- und Content-Produktion von ACAV Uganda in den sozialen Medien und prägte, wie die humanitäre und Entwicklungsarbeit der Organisation von Gebern und der Öffentlichkeit wahrgenommen wurde.",
+      "challenge": "Flüchtlingsunterstützung, Existenzsicherung und Klimaresilienz können für externe Zielgruppen distanziert oder abstrakt wirken, und die Sichtbarkeitsanforderungen der Geber bedeuteten, dass jede Kampagne emotional berührend und zugleich evidenzbasiert sein musste.",
+      "contribution": "Ich konzipierte und produzierte Kampagnen von A bis Z — Konzepterstellung, Dreh und Schnitt von Kurzvideos und Motion Graphics, Gestaltung von Infografiken und Verwaltung des Social-Media-Kalenders — darunter die Kampagne „Love is Action“ und das SUIDAC-Klimavideo.",
+      "outcome": "Stärkte das öffentliche und geberseitige Bewusstsein für ACAVs Arbeit zu Flüchtlingsunterstützung, Existenzsicherung und Klimaresilienz durch Kampagneninhalte, die die Sichtbarkeit der Organisation bei internationalen Gebern erhöhten.",
+      "deliverables": ["Entwicklung von Kampagnenkonzepten", "Social-Media-Grafiken & -Strategie", "Kurzvideoproduktion", "Motion Graphics", "Infografiken & visuelles Design", "Sichtbarkeitsmaterialien für Geber"]
+    },
+    {
+      "tag": "Strategie & Kampagne",
+      "role": "Kommunikationsreferent",
+      "year": "Nov. 2023 – Nov. 2024",
+      "desc": "Verantwortete Programmkommunikation und Sichtbarkeit für Plan International Uganda in den Bereichen Kinderrechte, Mädchenförderung und Entwicklungsprogramme. Erstellte Inhalte, die die Stimmen der Gemeinschaft internationalen Gebern und Medien näherbrachten.",
+      "myRole": "Als Kommunikationsreferent war ich für die Programmsichtbarkeit verantwortlich — ich verwandelte Feldarbeit zu Kinderrechten und Mädchenförderung in Geschichten und Berichte, die internationale Geber- und Medienpublikum erreichten.",
+      "challenge": "Die Stimmen von Gemeinschaft und Kindern zu verstärken bedeutete, überzeugendes Storytelling mit strengen Schutz- und Ethikstandards in Einklang zu bringen und gleichzeitig die Berichterstattungserwartungen der Geber innerhalb enger vierteljährlicher Fristen zu erfüllen.",
+      "contribution": "Ich produzierte Fotografie-, Video- und Textinhalte vor Ort (darunter „The Buddy System“ und die Kampagne zum Internationalen Mädchentag 2024), verfasste vierteljährliche Erzählberichte und koordinierte die Sichtbarkeit rund um wichtige Programmveranstaltungen.",
+      "outcome": "Lieferte durchgängig geberkonforme Sichtbarkeitsinhalte, die die Stimmen der Gemeinschaft verantwortungsvoll verstärkten und das Profil von Plan International Uganda bei internationalen Gebern und Medien stärkten.",
+      "deliverables": ["Sichtbarkeitsstrategie für Programme", "Geber- & Medienkommunikation", "Produktion von Social-Media-Inhalten", "Fotografie & Videoproduktion", "Vierteljährliche Erzählberichte", "Veranstaltungskommunikation & -berichterstattung"]
+    },
+    {
+      "tag": "Content & Film",
+      "role": "Kommunikationsreferent",
+      "year": "Juni 2022 – Dez. 2022",
+      "desc": "Produzierte Naturschutz-Storytelling-Inhalte für Ugandas führende Vogelschutz- und Umweltorganisation. Schuf multimediale Erzählungen über Wildtiere, Lebensräume und Umweltschutz, um öffentliches Engagement und Geberinteresse zu steigern.",
+      "myRole": "Als Kommunikationsreferent verantwortete ich die Storytelling-Produktion von Nature Uganda — das Verfassen von Naturschutzreportagen, das Management von Social-Media-Kampagnen und die Produktion von Kurzdokumentationen über Wildtiere und Lebensraumschutz.",
+      "challenge": "Naturschutz und Vogelbeobachtung sind für die meisten Uganderinnen und Ugander Nischenthemen, daher brauchte die Arbeit frische, zugängliche Erzählwinkel, um im Wettbewerb um öffentliche Aufmerksamkeit und Geberinteresse gegenüber sichtbareren Entwicklungssektoren zu bestehen.",
+      "contribution": "Ich verfasste Naturschutzreportagen und -artikel, produzierte Kurzdokumentationen, leitete Social-Media-Kampagnen wie #VultureAwarenessDay und hielt Website und Newsletter mit frischen Geschichten aktuell.",
+      "outcome": "Steigerte das öffentliche Engagement für Naturschutzinhalte und stärkte das Geberinteresse an der Umweltschutzarbeit von Nature Uganda durch konsequente, geschichtenbasierte Kommunikation.",
+      "deliverables": ["Naturschutz-Reportagen & -Artikel", "Management von Social-Media-Kampagnen", "Produktion von Kurzdokumentationen", "Fotografie für Kampagnen", "Verwaltung von Website-Inhalten", "Newsletter & Geberkommunikation"]
+    },
+    {
+      "tag": "Design & Markenbildung",
+      "role": "Kreativberater",
+      "year": "2013 – Heute",
+      "desc": "Markenidentität, Bannerdesign, Druckmaterialien und visuelle Elemente für NGOs, Veranstaltungen und Unternehmenskunden in Uganda und darüber hinaus.",
+      "myRole": "Als unabhängiger Kreativberater arbeite ich direkt mit NGOs, Veranstaltungen und Unternehmenskunden zusammen, um Markenidentität und visuelle Assets auf Projektbasis zu gestalten und zu liefern.",
+      "challenge": "Kleineren Organisationen und Veranstaltungen fehlt oft ein interner Designer, sie benötigen aber professionelle, markenkonforme Materialien, die schnell und eigenständig geliefert werden — ohne den Aufwand einer vollen Agentur.",
+      "contribution": "Ich gestaltete Markenidentitäten und Styleguides, Veranstaltungs- und Ausstellungsgrafiken, Banner und Druckmaterialien für Kunden wie VSO, ACAV, Fields of Life und M Toxicology, dazu Infografiken, Motion Design und Voice-over-Arbeiten.",
+      "outcome": "Lieferte eine durchgängige, professionelle visuelle Identität über die Kampagnen und Veranstaltungen mehrerer Kunden hinweg und half kleineren Organisationen, ohne eigene Designressourcen ein gepflegtes öffentliches Bild zu präsentieren.",
+      "deliverables": ["Banner- & Plakatdesign", "Markenidentität & Styleguides", "Veranstaltungs- & Ausstellungsgrafiken", "Social-Media-Vorlagen", "Druckmaterialien & Publikationen", "Infografiken", "Motion Design", "Voice-over"]
+    }
+  ],
+  "work_items": [
+    { "org": "National Water & Sewerage Corporation", "title": "Veranstaltungen, Markenbildung & digitale Kommunikation", "wtag": "Web & Digital" },
+    { "org": "Associazione Centro Aiuti Volontari", "title": "Geberkonforme Kommunikation", "wtag": "Kommunikation" },
+    { "org": "Plan International Uganda", "title": "Programmsichtbarkeit & Kommunikation", "wtag": "Strategie" },
+    { "org": "Nature Uganda", "title": "Naturschutz-Storytelling & Social-Media-Kampagnen", "wtag": "Digital & Social Media" },
+    { "org": "Verschiedene Kunden", "title": "Kreativberater", "wtag": "Druck, Design & Film" }
+  ]
+}

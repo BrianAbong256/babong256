@@ -1,0 +1,174 @@
+{
+  "meta": {
+    "title": "Brian Abong - Communications & Creative",
+    "description": "Brian Abong - Communications Specialist and Creative Consultant based in Uganda. Strategic communications, content and creative consulting for NGOs, development organisations & brands."
+  },
+  "hero": {
+    "tag": "Communications · Creative · Strategy",
+    "title_line1": "Stories",
+    "title_pre": "that",
+    "title_em": "move",
+    "title_line3": "people.",
+    "sub": "Strategic communications, content creation & creative consulting for NGOs, development organisations & brands.",
+    "cta": "Explore my work",
+    "years_number": "11",
+    "years_label1": "Years",
+    "years_label2": "across Uganda & beyond",
+    "scroll_hint": "Use arrows or keys to navigate"
+  },
+  "about": {
+    "label": "About",
+    "h2_line1": "Newsroom trained.",
+    "h2_em": "Mission driven.",
+    "p1": "I am a communications specialist with roots in the newsroom and a career built across Uganda’s water, conservation and development sectors. I bring a journalist’s instinct for the right story at the right moment — and a designer’s eye for making it land.",
+    "p2": "From breaking news to brand strategy, annual reports to short documentaries, I turn complex missions into clear, compelling human stories. Now pivoting to remote consulting, I help organisations communicate with clarity, creativity and cultural resonance.",
+    "cv_button": "Download CV",
+    "stat_orgs": "Organisations",
+    "stat_sectors": "Sectors",
+    "stat_years": "Years"
+  },
+  "services": {
+    "label": "Services",
+    "h2_line1": "What I bring",
+    "h2_em": "to the table",
+    "items": [
+      {
+        "title": "Content & Copywriting",
+        "desc": "News, features, press releases, web copy, annual reports and social media — crafted stories that reach the right audiences and drive action."
+      },
+      {
+        "title": "Visual & Motion",
+        "desc": "Still & motion graphics, animation, social media videos, short documentaries, infographics and exhibition materials that make your message impossible to ignore."
+      },
+      {
+        "title": "Web & Digital",
+        "desc": "Website design and management, SEO-optimised content, social media strategy, management and digital presence across multiple platforms."
+      },
+      {
+        "title": "Strategy & Training",
+        "desc": "Communications frameworks, staff capacity building, event management, exhibition coordination and visibility strategy for programmes."
+      }
+    ]
+  },
+  "work": {
+    "label": "Selected Work",
+    "h2_line1": "Projects &",
+    "h2_em": "campaigns"
+  },
+  "skills": {
+    "label": "Toolkit",
+    "h2_line1": "Skills &",
+    "h2_em": "expertise",
+    "group1_title": "Communication",
+    "group2_title": "Creative & Technical",
+    "levels": {
+      "expert": "Expert",
+      "advanced": "Advanced",
+      "proficient": "Proficient"
+    },
+    "bars1": [
+      "News & Feature Writing",
+      "Copywriting & Editing",
+      "Social Media Management",
+      "Communications Strategy",
+      "Staff Training"
+    ],
+    "bars2": [
+      "Graphic Design",
+      "Video Production & Editing",
+      "Website Design & Management",
+      "Photography",
+      "Event Management"
+    ]
+  },
+  "contact": {
+    "label": "Contact",
+    "h2_line1": "Let’s build",
+    "h2_pre": "something",
+    "h2_em": "Awesome!",
+    "tagline": "Open to remote contracts, consultancy and part-time roles.",
+    "email_label": "Email",
+    "linkedin_label": "LinkedIn",
+    "whatsapp_label": "WhatsApp & Phone",
+    "youtube_label": "YouTube Channel",
+    "availability": "Available for new projects",
+    "footer": "© Designed by Brian Abong 2026"
+  },
+  "nav": {
+    "prev": "Previous",
+    "next": "Next",
+    "logo": "B. ABONG"
+  },
+  "modal": {
+    "my_role": "My Role",
+    "challenge": "The Challenge",
+    "contribution": "Your Specific Contribution",
+    "outcome": "The Outcome",
+    "deliverables": "Deliverables",
+    "tools": "Tools"
+  },
+  "projects": [
+    {
+      "tag": "Web & Digital",
+      "role": "Website & Graphics Officer",
+      "year": "Aug 2014 – June 2022",
+      "desc": "Managed digital communications, event coverage and branding for Uganda's national water utility. Produced event promo videos and branded social media content that raised public awareness of NWSC services and events across Uganda.",
+      "myRole": "As Website & Graphics Officer, I owned NWSC's digital presence end-to-end — from website content and updates to graphics for internal and public-facing campaigns, working closely with technical and events teams.",
+      "challenge": "NWSC's work is largely technical and infrastructure-based, making it hard to communicate in ways that felt relevant and engaging to everyday Ugandans, while events needed strong visibility to drive turnout and public awareness.",
+      "contribution": "I filmed and edited event promo videos (including the AFWA event teaser), managed the corporate website, and produced branded social media graphics and campaigns that translated technical utility work into accessible public messaging.",
+      "outcome": "Raised public awareness of NWSC services and events, strengthened the organisation's digital and brand presence, and delivered a body of promotional video and graphic content used across multiple public engagements.",
+      "deliverables": ["Event teaser & promo videos", "Social media content & management", "Photography & videography", "Press & stakeholder communications", "Digital content strategy"]
+    },
+    {
+      "tag": "Communications & Strategy",
+      "role": "Senior Visibility & Communications Officer",
+      "year": "Dec 2024 – Apr 2026",
+      "desc": "Developed visual, written and video content for ACAV Uganda's social media platforms, translating development and humanitarian work into engaging stories that increased awareness of refugee support, livelihoods, climate resilience, and community development initiatives.",
+      "myRole": "As Senior Visibility & Communications Officer, I led ACAV Uganda's storytelling and content output across social media, shaping how the organisation's humanitarian and development programming was seen by donors and the public.",
+      "challenge": "Refugee support, livelihoods and climate resilience programming can feel distant or abstract to outside audiences, and donor visibility requirements meant every campaign needed to be both emotionally resonant and evidence-backed.",
+      "contribution": "I conceived and produced campaigns end-to-end — writing concepts, shooting and editing short-form videos and motion graphics, designing infographics, and managing the social calendar — including the \"Love is Action\" campaign and the SUIDAC climate change video.",
+      "outcome": "Increased public and donor awareness of ACAV's refugee support, livelihoods and climate resilience work, with campaign content that strengthened the organisation's visibility to international donor audiences.",
+      "deliverables": ["Campaign concept development", "Social media graphics & strategy", "Short-form video production", "Motion graphics", "Infographics & visual design", "Donor visibility materials"]
+    },
+    {
+      "tag": "Strategy & Campaign",
+      "role": "Communications Officer",
+      "year": "Nov 2023 – Nov 2024",
+      "desc": "Managed programme communications and visibility for Plan International Uganda across child rights, girls empowerment and development programming. Created content that amplified community voices to international donor and media audiences.",
+      "myRole": "As Communications Officer, I was responsible for programme visibility — turning fieldwork on child rights and girls' empowerment into stories and reports that reached donor and media audiences internationally.",
+      "challenge": "Amplifying community and children's voices meant balancing compelling storytelling with strict safeguarding and ethical standards, while still meeting donor reporting expectations on tight quarterly timelines.",
+      "contribution": "I produced photography, video and written content from the field (including \"The Buddy System\" and the International Day of the Girl 2024 campaign), wrote quarterly narrative reports, and coordinated visibility around key programme events.",
+      "outcome": "Delivered consistent, donor-ready visibility content that amplified community voices responsibly, strengthening Plan International Uganda's profile with international donors and media.",
+      "deliverables": ["Programme visibility strategy", "Donor & media communications", "Social media content production", "Photography & video production", "Quarterly narrative reports", "Event communications & coverage"]
+    },
+    {
+      "tag": "Content & Film",
+      "role": "Communications Officer",
+      "year": "June 2022 – Dec 2022",
+      "desc": "Produced conservation storytelling content for Uganda's leading birding and environmental organisation. Created multimedia narratives around wildlife, habitats and environmental advocacy to grow public engagement and donor interest.",
+      "myRole": "As Communications Officer, I owned Nature Uganda's storytelling output — writing conservation features, managing social campaigns, and producing short documentaries on wildlife and habitat advocacy.",
+      "challenge": "Conservation and birding are niche subjects for most Ugandans, so the work needed fresh, accessible narrative angles to compete for public attention and donor interest against more visible development sectors.",
+      "contribution": "I wrote conservation features and articles, produced short documentary content, managed social campaigns such as #VultureAwarenessDay, and kept the website and newsletters updated with fresh storytelling.",
+      "outcome": "Grew public engagement with conservation content and strengthened donor interest in Nature Uganda's environmental advocacy work through consistent, story-driven communications.",
+      "deliverables": ["Conservation features & articles", "Social media campaign management", "Short documentary production", "Photography for campaigns", "Website content management", "Newsletters & donor communications"]
+    },
+    {
+      "tag": "Design & Branding",
+      "role": "Creative Consultant",
+      "year": "2013 – Present",
+      "desc": "Brand identity, banner design, print collateral and visual assets for NGOs, events and corporate clients across Uganda and beyond.",
+      "myRole": "As independent Creative Consultant, I work directly with NGOs, events and corporate clients to design and deliver brand identity and visual assets on a project basis.",
+      "challenge": "Smaller organisations and events often lack an in-house designer, and need professional, on-brand materials delivered quickly and independently, without the overhead of a full agency.",
+      "contribution": "I designed brand identities and style guides, event and exhibition graphics, banners and print collateral for clients including VSO, ACAV, Fields of Life and M Toxicology, alongside infographics, motion design and voice-over work.",
+      "outcome": "Delivered a consistent, professional visual identity across multiple clients' campaigns and events, helping smaller organisations present a polished public image without in-house design resources.",
+      "deliverables": ["Banner & billboard design", "Brand identity & style guides", "Event & exhibition graphics", "Social media templates", "Print collateral & publications", "Infographics", "Motion Design", "Voice Over"]
+    }
+  ],
+  "work_items": [
+    { "org": "National Water & Sewerage Corporation", "title": "Events, Branding & Digital Communications", "wtag": "Web & Digital" },
+    { "org": "Associazione Centro Aiuti Volontari", "title": "Donor Compliant Communications", "wtag": "Communications" },
+    { "org": "Plan International Uganda", "title": "Programme Visibility & Communications", "wtag": "Strategy" },
+    { "org": "Nature Uganda", "title": "Conservation Storytelling & Social Media Campaigns", "wtag": "Digital & Social Media" },
+    { "org": "Various Clients", "title": "Creative Consultant", "wtag": "Print, Design & Film" }
+  ]
+}

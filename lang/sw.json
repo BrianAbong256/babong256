@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "title": "Brian Abong - Mawasiliano na Ubunifu",
+    "description": "Brian Abong - Mtaalamu wa Mawasiliano na Mshauri wa Ubunifu anayeishi Uganda. Mawasiliano ya kimkakati, uundaji wa maudhui na ushauri wa ubunifu kwa Mashirika Yasiyo ya Kiserikali, mashirika ya maendeleo na chapa."
+  },
+  "hero": {
+    "tag": "Mawasiliano · Ubunifu · Mkakati",
+    "title_line1": "Hadithi",
+    "title_pre": "zinazogusa",
+    "title_em": "mioyo",
+    "title_line3": "ya watu.",
+    "sub": "Mawasiliano ya kimkakati, uundaji wa maudhui na ushauri wa ubunifu kwa Mashirika Yasiyo ya Kiserikali, mashirika ya maendeleo na chapa.",
+    "cta": "Angalia kazi zangu",
+    "years_number": "11",
+    "years_label1": "Miaka",
+    "years_label2": "ya uzoefu Uganda na kwingineko",
+    "scroll_hint": "Tumia mishale au kibodi kuvinjari"
+  },
+  "about": {
+    "label": "Kunihusu",
+    "h2_line1": "Nimefunzwa chumba cha habari.",
+    "h2_em": "Ninaongozwa na dhamira.",
+    "p1": "Mimi ni mtaalamu wa mawasiliano niliyefunzwa katika chumba cha habari, na kazi iliyojengwa katika sekta za maji, uhifadhi na maendeleo nchini Uganda. Ninaleta hisia ya mwandishi wa habari kupata hadithi sahihi wakati sahihi — na jicho la mbunifu la kuifanya ifikie lengo.",
+    "p2": "Kutoka habari za dharura hadi mkakati wa chapa, ripoti za mwaka hadi hali halisi fupi, nabadilisha dhamira ngumu kuwa hadithi za kibinadamu zilizo wazi na zenye mvuto. Sasa nikielekea ushauri wa mbali, ninasaidia mashirika kuwasiliana kwa uwazi, ubunifu na uelewano wa kitamaduni.",
+    "cv_button": "Pakua CV",
+    "stat_orgs": "Mashirika",
+    "stat_sectors": "Sekta",
+    "stat_years": "Miaka"
+  },
+  "services": {
+    "label": "Huduma",
+    "h2_line1": "Ninachokileta",
+    "h2_em": "mezani",
+    "items": [
+      { "title": "Maudhui & Uandishi", "desc": "Habari, makala, taarifa kwa vyombo vya habari, maudhui ya wavuti, ripoti za mwaka na mitandao ya kijamii — hadithi zilizoundwa kufikia hadhira sahihi na kuchochea hatua." },
+      { "title": "Picha & Mwendo", "desc": "Michoro ya picha na ya mwendo, uhuishaji, video za mitandao ya kijamii, hali halisi fupi, infographics na vifaa vya maonyesho vinavyofanya ujumbe wako usipuuzike." },
+      { "title": "Wavuti & Kidijitali", "desc": "Ubunifu na usimamizi wa tovuti, maudhui yaliyoboreshwa kwa SEO, mkakati na usimamizi wa mitandao ya kijamii, na uwepo wa kidijitali katika majukwaa mengi." },
+      { "title": "Mkakati & Mafunzo", "desc": "Mifumo ya mawasiliano, kujenga uwezo wa wafanyakazi, usimamizi wa matukio, uratibu wa maonyesho na mkakati wa mwonekano wa programu." }
+    ]
+  },
+  "work": {
+    "label": "Kazi Zilizochaguliwa",
+    "h2_line1": "Miradi &",
+    "h2_em": "kampeni"
+  },
+  "skills": {
+    "label": "Vifaa vya Kazi",
+    "h2_line1": "Ujuzi &",
+    "h2_em": "utaalamu",
+    "group1_title": "Mawasiliano",
+    "group2_title": "Ubunifu & Kiufundi",
+    "levels": { "expert": "Mtaalamu", "advanced": "Wa Juu", "proficient": "Mzuri" },
+    "bars1": ["Uandishi wa Habari & Makala", "Uandishi & Uhariri", "Usimamizi wa Mitandao ya Kijamii", "Mkakati wa Mawasiliano", "Mafunzo ya Wafanyakazi"],
+    "bars2": ["Ubunifu wa Picha", "Uzalishaji & Uhariri wa Video", "Ubunifu & Usimamizi wa Tovuti", "Upigaji Picha", "Usimamizi wa Matukio"]
+  },
+  "contact": {
+    "label": "Wasiliana",
+    "h2_line1": "Tujenge",
+    "h2_pre": "kitu",
+    "h2_em": "Kizuri!",
+    "tagline": "Niko tayari kwa mikataba ya mbali, ushauri na majukumu ya muda.",
+    "email_label": "Barua pepe",
+    "linkedin_label": "LinkedIn",
+    "whatsapp_label": "WhatsApp & Simu",
+    "youtube_label": "Kituo cha YouTube",
+    "availability": "Ninapatikana kwa miradi mipya",
+    "footer": "© Imeundwa na Brian Abong 2026"
+  },
+  "nav": { "prev": "Iliyopita", "next": "Ifuatayo", "logo": "B. ABONG" },
+  "modal": {
+    "my_role": "Jukumu Langu",
+    "challenge": "Changamoto",
+    "contribution": "Mchango Wangu Maalum",
+    "outcome": "Matokeo",
+    "deliverables": "Matokeo Yaliyokabidhiwa",
+    "tools": "Zana"
+  },
+  "projects": [
+    {
+      "tag": "Wavuti & Kidijitali",
+      "role": "Afisa wa Tovuti na Michoro",
+      "year": "Ago 2014 – Juni 2022",
+      "desc": "Alisimamia mawasiliano ya kidijitali, uandishi wa matukio na chapa kwa shirika la kitaifa la maji la Uganda. Alizalisha video za matangazo ya matukio na maudhui ya mitandao ya kijamii yaliyoongeza uelewa wa umma kuhusu huduma na matukio ya NWSC kote Uganda.",
+      "myRole": "Kama Afisa wa Tovuti na Michoro, nilisimamia uwepo wa kidijitali wa NWSC kikamilifu — kutoka maudhui na masasisho ya tovuti hadi michoro kwa kampeni za ndani na za umma, nikifanya kazi kwa karibu na timu za kiufundi na za matukio.",
+      "challenge": "Kazi ya NWSC ni ya kiufundi zaidi na inayohusiana na miundombinu, hivyo ilikuwa vigumu kuwasilisha kwa namna inayogusa na kuvutia Waganda wa kawaida, huku matukio yakihitaji mwonekano mkubwa ili kuvutia washiriki na uelewa wa umma.",
+      "contribution": "Nilipiga na kuhariri video za matangazo ya matukio (ikiwemo teaser ya tukio la AFWA), nikasimamia tovuti ya shirika, na kuzalisha michoro na kampeni za chapa za mitandao ya kijamii zilizobadilisha kazi ya kiufundi kuwa ujumbe unaoeleweka kwa umma.",
+      "outcome": "Iliongeza uelewa wa umma kuhusu huduma na matukio ya NWSC, ikaimarisha uwepo wa kidijitali na chapa ya shirika, na kutoa video na michoro nyingi za kutangaza zilizotumika katika matukio mengi ya umma.",
+      "deliverables": ["Video za matangazo ya matukio", "Maudhui & usimamizi wa mitandao ya kijamii", "Upigaji picha & video", "Mawasiliano ya vyombo vya habari na wadau", "Mkakati wa maudhui ya kidijitali"]
+    },
+    {
+      "tag": "Mawasiliano & Mkakati",
+      "role": "Afisa Mkuu wa Mwonekano na Mawasiliano",
+      "year": "Des 2024 – Apr 2026",
+      "desc": "Alitengeneza maudhui ya picha, maandishi na video kwa mitandao ya kijamii ya ACAV Uganda, akibadilisha kazi za maendeleo na kibinadamu kuwa hadithi za kuvutia zilizoongeza uelewa wa msaada kwa wakimbizi, riziki, uwezo wa kustahimili mabadiliko ya tabianchi, na miradi ya maendeleo ya jamii.",
+      "myRole": "Kama Afisa Mkuu wa Mwonekano na Mawasiliano, niliongoza uzalishaji wa hadithi na maudhui ya ACAV Uganda kwenye mitandao ya kijamii, nikichagiza jinsi kazi ya kibinadamu na maendeleo ya shirika ilivyoonekana na wafadhili na umma.",
+      "challenge": "Programu za msaada kwa wakimbizi, riziki na ustahimilivu wa tabianchi zinaweza kuonekana mbali au dhahania kwa hadhira za nje, na matakwa ya mwonekano wa wafadhili yalimaanisha kila kampeni ilihitaji kugusa hisia na kuwa na ushahidi.",
+      "contribution": "Nilibuni na kuzalisha kampeni kikamilifu — kuandika dhana, kupiga na kuhariri video fupi na motion graphics, kubuni infographics, na kusimamia ratiba ya mitandao ya kijamii — ikiwemo kampeni ya \"Love is Action\" na video ya mabadiliko ya tabianchi ya SUIDAC.",
+      "outcome": "Iliongeza uelewa wa umma na wafadhili kuhusu kazi ya ACAV ya msaada kwa wakimbizi, riziki na ustahimilivu wa tabianchi, kwa maudhui ya kampeni yaliyoimarisha mwonekano wa shirika kwa hadhira za wafadhili wa kimataifa.",
+      "deliverables": ["Uendelezaji wa dhana za kampeni", "Michoro & mkakati wa mitandao ya kijamii", "Uzalishaji wa video fupi", "Motion graphics", "Infographics & muundo wa picha", "Vifaa vya mwonekano wa wafadhili"]
+    },
+    {
+      "tag": "Mkakati & Kampeni",
+      "role": "Afisa wa Mawasiliano",
+      "year": "Nov 2023 – Nov 2024",
+      "desc": "Alisimamia mawasiliano na mwonekano wa programu za Plan International Uganda katika haki za watoto, uwezeshaji wa wasichana na programu za maendeleo. Alitengeneza maudhui yaliyokuza sauti za jamii kwa wafadhili wa kimataifa na hadhira za vyombo vya habari.",
+      "myRole": "Kama Afisa wa Mawasiliano, nilikuwa na jukumu la mwonekano wa programu — nikibadilisha kazi ya uwandani kuhusu haki za watoto na uwezeshaji wa wasichana kuwa hadithi na ripoti zilizofikia wafadhili na vyombo vya habari kimataifa.",
+      "challenge": "Kukuza sauti za jamii na watoto kulimaanisha kusawazisha usimulizi wa hadithi wenye mvuto na viwango vikali vya ulinzi na maadili, huku bado tukikidhi matarajio ya taarifa za wafadhili ndani ya ratiba fupi za robo mwaka.",
+      "contribution": "Nilizalisha picha, video na maandishi kutoka uwandani (ikiwemo \"The Buddy System\" na kampeni ya Siku ya Kimataifa ya Mtoto wa Kike 2024), niliandika ripoti za simulizi za robo mwaka, na kuratibu mwonekano kuzunguka matukio muhimu ya programu.",
+      "outcome": "Ilitoa maudhui thabiti ya mwonekano yaliyokidhi matakwa ya wafadhili, yakikuza sauti za jamii kwa uwajibikaji, na kuimarisha taswira ya Plan International Uganda kwa wafadhili na vyombo vya habari vya kimataifa.",
+      "deliverables": ["Mkakati wa mwonekano wa programu", "Mawasiliano na wafadhili & vyombo vya habari", "Uzalishaji wa maudhui ya mitandao ya kijamii", "Upigaji picha & uzalishaji wa video", "Ripoti za simulizi za robo mwaka", "Mawasiliano & uandishi wa matukio"]
+    },
+    {
+      "tag": "Maudhui & Filamu",
+      "role": "Afisa wa Mawasiliano",
+      "year": "Juni 2022 – Des 2022",
+      "desc": "Alizalisha maudhui ya hadithi za uhifadhi kwa shirika kuu la uhifadhi wa ndege na mazingira nchini Uganda. Aliunda simulizi za media anuwai kuhusu wanyamapori, makazi na utetezi wa mazingira ili kukuza ushiriki wa umma na maslahi ya wafadhili.",
+      "myRole": "Kama Afisa wa Mawasiliano, nilisimamia uzalishaji wa hadithi za Nature Uganda — kuandika makala za uhifadhi, kusimamia kampeni za mitandao ya kijamii, na kuzalisha hali halisi fupi kuhusu wanyamapori na utetezi wa makazi.",
+      "challenge": "Uhifadhi na uangalizi wa ndege ni mada finyu kwa Waganda wengi, hivyo kazi hiyo ilihitaji mitazamo mipya na inayoeleweka ya usimulizi ili kushindana kwa ajili ya usikivu wa umma na maslahi ya wafadhili dhidi ya sekta za maendeleo zinazoonekana zaidi.",
+      "contribution": "Niliandika makala na habari za uhifadhi, nikazalisha maudhui ya hali halisi fupi, nikasimamia kampeni za mitandao ya kijamii kama #VultureAwarenessDay, na kuweka tovuti na majarida yakiwa na hadithi mpya kila mara.",
+      "outcome": "Ilikuza ushiriki wa umma na maudhui ya uhifadhi na kuimarisha maslahi ya wafadhili katika kazi ya utetezi wa mazingira ya Nature Uganda kupitia mawasiliano thabiti yanayoongozwa na hadithi.",
+      "deliverables": ["Makala & habari za uhifadhi", "Usimamizi wa kampeni za mitandao ya kijamii", "Uzalishaji wa hali halisi fupi", "Upigaji picha kwa kampeni", "Usimamizi wa maudhui ya tovuti", "Majarida & mawasiliano na wafadhili"]
+    },
+    {
+      "tag": "Ubunifu & Chapa",
+      "role": "Mshauri wa Ubunifu",
+      "year": "2013 – Sasa",
+      "desc": "Utambulisho wa chapa, ubunifu wa mabango, vifaa vya uchapishaji na vipengele vya picha kwa Mashirika Yasiyo ya Kiserikali, matukio na wateja wa kampuni kote Uganda na kwingineko.",
+      "myRole": "Kama Mshauri wa Ubunifu wa kujitegemea, ninafanya kazi moja kwa moja na Mashirika Yasiyo ya Kiserikali, matukio na wateja wa kampuni kubuni na kutoa utambulisho wa chapa na vipengele vya picha kwa msingi wa mradi.",
+      "challenge": "Mashirika madogo na matukio mara nyingi hayana mbunifu wa ndani, na yanahitaji vifaa vya kitaalamu vinavyoendana na chapa yao vilivyotolewa haraka na kwa kujitegemea, bila gharama za wakala kamili.",
+      "contribution": "Nilibuni utambulisho wa chapa na miongozo ya mtindo, michoro ya matukio na maonyesho, mabango na vifaa vya uchapishaji kwa wateja wakiwemo VSO, ACAV, Fields of Life na M Toxicology, pamoja na infographics, motion design na kazi za sauti ya nyuma.",
+      "outcome": "Ilitoa utambulisho wa picha thabiti na wa kitaalamu katika kampeni na matukio ya wateja mbalimbali, ikisaidia mashirika madogo kuonyesha taswira nzuri ya umma bila rasilimali za ubunifu za ndani.",
+      "deliverables": ["Ubunifu wa mabango & bango kubwa", "Utambulisho wa chapa & miongozo ya mtindo", "Michoro ya matukio & maonyesho", "Violezo vya mitandao ya kijamii", "Vifaa vya uchapishaji & machapisho", "Infographics", "Motion Design", "Sauti ya Nyuma"]
+    }
+  ],
+  "work_items": [
+    { "org": "National Water & Sewerage Corporation", "title": "Matukio, Chapa & Mawasiliano ya Kidijitali", "wtag": "Wavuti & Kidijitali" },
+    { "org": "Associazione Centro Aiuti Volontari", "title": "Mawasiliano Yanayozingatia Masharti ya Wafadhili", "wtag": "Mawasiliano" },
+    { "org": "Plan International Uganda", "title": "Mwonekano wa Programu & Mawasiliano", "wtag": "Mkakati" },
+    { "org": "Nature Uganda", "title": "Hadithi za Uhifadhi & Kampeni za Mitandao ya Kijamii", "wtag": "Kidijitali & Mitandao ya Kijamii" },
+    { "org": "Wateja Mbalimbali", "title": "Mshauri wa Ubunifu", "wtag": "Uchapishaji, Ubunifu & Filamu" }
+  ]
+}

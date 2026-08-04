@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "title": "Brian Abong - Comunicação & Criação",
+    "description": "Brian Abong - Especialista em Comunicação e Consultor Criativo baseado no Uganda. Comunicação estratégica, criação de conteúdo e consultoria criativa para ONGs, organizações de desenvolvimento e marcas."
+  },
+  "hero": {
+    "tag": "Comunicação · Criação · Estratégia",
+    "title_line1": "Histórias",
+    "title_pre": "que",
+    "title_em": "emocionam",
+    "title_line3": "as pessoas.",
+    "sub": "Comunicação estratégica, criação de conteúdo e consultoria criativa para ONGs, organizações de desenvolvimento e marcas.",
+    "cta": "Ver meus trabalhos",
+    "years_number": "11",
+    "years_label1": "Anos",
+    "years_label2": "de experiência no Uganda e além",
+    "scroll_hint": "Use as setas ou o teclado para navegar"
+  },
+  "about": {
+    "label": "Sobre mim",
+    "h2_line1": "Formado na redação.",
+    "h2_em": "Guiado pela missão.",
+    "p1": "Sou especialista em comunicação com raízes na redação e uma carreira construída nos setores de água, conservação e desenvolvimento do Uganda. Trago o instinto de um jornalista para encontrar a história certa no momento certo — e o olhar de um designer para fazê-la ressoar.",
+    "p2": "Das notícias de última hora à estratégia de marca, dos relatórios anuais aos curtas-documentários, transformo missões complexas em histórias humanas claras e envolventes. Em transição para a consultoria remota, ajudo organizações a comunicar com clareza, criatividade e ressonância cultural.",
+    "cv_button": "Baixar Currículo",
+    "stat_orgs": "Organizações",
+    "stat_sectors": "Setores",
+    "stat_years": "Anos"
+  },
+  "services": {
+    "label": "Serviços",
+    "h2_line1": "O que eu ofereço",
+    "h2_em": "à mesa",
+    "items": [
+      { "title": "Conteúdo & Redação", "desc": "Notícias, reportagens, comunicados de imprensa, textos para web, relatórios anuais e redes sociais — histórias criadas para alcançar o público certo e gerar ação." },
+      { "title": "Visual & Movimento", "desc": "Design gráfico estático e em movimento, animação, vídeos para redes sociais, curtas-documentários, infográficos e materiais de exposição que tornam sua mensagem impossível de ignorar." },
+      { "title": "Web & Digital", "desc": "Design e gestão de websites, conteúdo otimizado para SEO, estratégia e gestão de redes sociais e presença digital em múltiplas plataformas." },
+      { "title": "Estratégia & Formação", "desc": "Estruturas de comunicação, capacitação de equipas, gestão de eventos, coordenação de exposições e estratégia de visibilidade para programas." }
+    ]
+  },
+  "work": {
+    "label": "Trabalhos Selecionados",
+    "h2_line1": "Projetos &",
+    "h2_em": "campanhas"
+  },
+  "skills": {
+    "label": "Ferramentas",
+    "h2_line1": "Competências &",
+    "h2_em": "especialização",
+    "group1_title": "Comunicação",
+    "group2_title": "Criativo & Técnico",
+    "levels": { "expert": "Especialista", "advanced": "Avançado", "proficient": "Proficiente" },
+    "bars1": ["Redação de Notícias & Reportagens", "Redação & Edição", "Gestão de Redes Sociais", "Estratégia de Comunicação", "Formação de Equipas"],
+    "bars2": ["Design Gráfico", "Produção & Edição de Vídeo", "Design & Gestão de Websites", "Fotografia", "Gestão de Eventos"]
+  },
+  "contact": {
+    "label": "Contacto",
+    "h2_line1": "Vamos construir",
+    "h2_pre": "algo",
+    "h2_em": "Incrível!",
+    "tagline": "Aberto a contratos remotos, consultoria e funções a tempo parcial.",
+    "email_label": "E-mail",
+    "linkedin_label": "LinkedIn",
+    "whatsapp_label": "WhatsApp & Telefone",
+    "youtube_label": "Canal do YouTube",
+    "availability": "Disponível para novos projetos",
+    "footer": "© Concebido por Brian Abong 2026"
+  },
+  "nav": { "prev": "Anterior", "next": "Seguinte", "logo": "B. ABONG" },
+  "modal": {
+    "my_role": "O Meu Papel",
+    "challenge": "O Desafio",
+    "contribution": "A Minha Contribuição Específica",
+    "outcome": "O Resultado",
+    "deliverables": "Entregáveis",
+    "tools": "Ferramentas"
+  },
+  "projects": [
+    {
+      "tag": "Web & Digital",
+      "role": "Responsável de Website e Design Gráfico",
+      "year": "Ago 2014 – Jun 2022",
+      "desc": "Geriu a comunicação digital, cobertura de eventos e imagem de marca da empresa nacional de águas do Uganda. Produziu vídeos promocionais de eventos e conteúdo de marca para redes sociais que aumentaram a visibilidade pública dos serviços e eventos da NWSC em todo o Uganda.",
+      "myRole": "Como Responsável de Website e Design Gráfico, geri a presença digital da NWSC de ponta a ponta — desde conteúdo e atualizações do website até gráficos para campanhas internas e públicas, trabalhando em estreita colaboração com equipas técnicas e de eventos.",
+      "challenge": "O trabalho da NWSC é maioritariamente técnico e ligado a infraestruturas, o que dificultava uma comunicação relevante e envolvente para os ugandeses comuns, enquanto os eventos precisavam de forte visibilidade para atrair afluência e consciencialização pública.",
+      "contribution": "Filmei e editei vídeos promocionais de eventos (incluindo o teaser do evento AFWA), geri o website corporativo, e produzi gráficos e campanhas de marca para redes sociais que traduziram o trabalho técnico da empresa em mensagens públicas acessíveis.",
+      "outcome": "Aumentou a consciencialização pública sobre os serviços e eventos da NWSC, reforçou a presença digital e de marca da organização, e entregou um conjunto de conteúdo de vídeo e gráfico promocional utilizado em múltiplos eventos públicos.",
+      "deliverables": ["Vídeos teaser & promocionais de eventos", "Conteúdo & gestão de redes sociais", "Fotografia & videografia", "Comunicação com imprensa & partes interessadas", "Estratégia de conteúdo digital"]
+    },
+    {
+      "tag": "Comunicação & Estratégia",
+      "role": "Responsável Sénior de Visibilidade e Comunicação",
+      "year": "Dez 2024 – Abr 2026",
+      "desc": "Desenvolveu conteúdo visual, escrito e em vídeo para as plataformas de redes sociais da ACAV Uganda, traduzindo trabalho humanitário e de desenvolvimento em histórias envolventes que aumentaram a consciencialização sobre apoio a refugiados, meios de subsistência, resiliência climática e iniciativas de desenvolvimento comunitário.",
+      "myRole": "Como Responsável Sénior de Visibilidade e Comunicação, liderei a produção de narrativas e conteúdo da ACAV Uganda nas redes sociais, moldando a forma como o trabalho humanitário e de desenvolvimento da organização era visto por doadores e pelo público.",
+      "challenge": "O apoio a refugiados, os meios de subsistência e a resiliência climática podem parecer distantes ou abstratos para públicos externos, e os requisitos de visibilidade dos doadores exigiam que cada campanha fosse simultaneamente emocionalmente ressonante e fundamentada em evidências.",
+      "contribution": "Concebi e produzi campanhas de ponta a ponta — escrevendo conceitos, filmando e editando vídeos curtos e motion graphics, desenhando infográficos e gerindo o calendário social — incluindo a campanha \"Love is Action\" e o vídeo sobre alterações climáticas da SUIDAC.",
+      "outcome": "Aumentou a consciencialização pública e dos doadores sobre o trabalho da ACAV em apoio a refugiados, meios de subsistência e resiliência climática, com conteúdo de campanha que reforçou a visibilidade da organização junto de públicos doadores internacionais.",
+      "deliverables": ["Desenvolvimento de conceitos de campanha", "Design gráfico & estratégia para redes sociais", "Produção de vídeos curtos", "Motion graphics", "Infográficos & design visual", "Materiais de visibilidade para doadores"]
+    },
+    {
+      "tag": "Estratégia & Campanha",
+      "role": "Responsável de Comunicação",
+      "year": "Nov 2023 – Nov 2024",
+      "desc": "Geriu a comunicação e visibilidade de programas da Plan International Uganda nas áreas de direitos das crianças, empoderamento de raparigas e programas de desenvolvimento. Criou conteúdo que amplificou vozes comunitárias junto de doadores internacionais e meios de comunicação.",
+      "myRole": "Como Responsável de Comunicação, fui responsável pela visibilidade dos programas — transformando trabalho de terreno sobre direitos das crianças e empoderamento de raparigas em histórias e relatórios que chegavam a doadores e meios de comunicação internacionais.",
+      "challenge": "Amplificar as vozes da comunidade e das crianças exigia equilibrar uma narrativa cativante com padrões rigorosos de salvaguarda e ética, cumprindo simultaneamente as expectativas de relatórios dos doadores em prazos trimestrais apertados.",
+      "contribution": "Produzi fotografia, vídeo e conteúdo escrito no terreno (incluindo \"The Buddy System\" e a campanha do Dia Internacional da Rapariga 2024), redigi relatórios narrativos trimestrais e coordenei a visibilidade em torno de eventos-chave do programa.",
+      "outcome": "Entregou conteúdo de visibilidade consistente e pronto para doadores que amplificou vozes comunitárias de forma responsável, reforçando a imagem da Plan International Uganda junto de doadores e meios de comunicação internacionais.",
+      "deliverables": ["Estratégia de visibilidade de programas", "Comunicação com doadores & imprensa", "Produção de conteúdo para redes sociais", "Fotografia & produção de vídeo", "Relatórios narrativos trimestrais", "Comunicação & cobertura de eventos"]
+    },
+    {
+      "tag": "Conteúdo & Cinema",
+      "role": "Responsável de Comunicação",
+      "year": "Jun 2022 – Dez 2022",
+      "desc": "Produziu conteúdo narrativo de conservação para a principal organização de observação de aves e ambiente do Uganda. Criou narrativas multimédia sobre vida selvagem, habitats e defesa ambiental para aumentar o envolvimento público e o interesse de doadores.",
+      "myRole": "Como Responsável de Comunicação, geri a produção narrativa da Nature Uganda — escrevendo reportagens de conservação, gerindo campanhas sociais e produzindo curtas-documentários sobre vida selvagem e defesa de habitats.",
+      "challenge": "A conservação e a observação de aves são temas de nicho para a maioria dos ugandeses, pelo que o trabalho precisava de ângulos narrativos novos e acessíveis para competir pela atenção pública e o interesse de doadores frente a setores de desenvolvimento mais visíveis.",
+      "contribution": "Escrevi reportagens e artigos de conservação, produzi conteúdo documental curto, geri campanhas sociais como #VultureAwarenessDay, e mantive o website e os boletins atualizados com narrativas frescas.",
+      "outcome": "Aumentou o envolvimento público com conteúdo de conservação e reforçou o interesse de doadores no trabalho de defesa ambiental da Nature Uganda através de comunicação consistente orientada por narrativas.",
+      "deliverables": ["Reportagens & artigos sobre conservação", "Gestão de campanhas em redes sociais", "Produção de curtas-documentários", "Fotografia para campanhas", "Gestão de conteúdo do website", "Boletins & comunicação com doadores"]
+    },
+    {
+      "tag": "Design & Marca",
+      "role": "Consultor Criativo",
+      "year": "2013 – Presente",
+      "desc": "Identidade de marca, design de banners, materiais impressos e elementos visuais para ONGs, eventos e clientes empresariais no Uganda e além.",
+      "myRole": "Como Consultor Criativo independente, trabalho diretamente com ONGs, eventos e clientes empresariais para desenhar e entregar identidade de marca e elementos visuais numa base de projeto.",
+      "challenge": "Organizações e eventos mais pequenos frequentemente não têm um designer interno e precisam de materiais profissionais e alinhados com a marca, entregues rapidamente e de forma independente, sem os custos de uma agência completa.",
+      "contribution": "Desenhei identidades de marca e manuais de estilo, gráficos de eventos e exposições, banners e materiais impressos para clientes incluindo VSO, ACAV, Fields of Life e M Toxicology, além de infográficos, motion design e trabalho de locução.",
+      "outcome": "Entregou uma identidade visual consistente e profissional em várias campanhas e eventos de clientes, ajudando organizações mais pequenas a apresentar uma imagem pública cuidada sem recursos de design internos.",
+      "deliverables": ["Design de banners & outdoors", "Identidade de marca & manuais de estilo", "Design gráfico para eventos & exposições", "Modelos para redes sociais", "Materiais impressos & publicações", "Infográficos", "Motion Design", "Locução"]
+    }
+  ],
+  "work_items": [
+    { "org": "National Water & Sewerage Corporation", "title": "Eventos, Marca & Comunicação Digital", "wtag": "Web & Digital" },
+    { "org": "Associazione Centro Aiuti Volontari", "title": "Comunicação em Conformidade com Doadores", "wtag": "Comunicação" },
+    { "org": "Plan International Uganda", "title": "Visibilidade de Programas & Comunicação", "wtag": "Estratégia" },
+    { "org": "Nature Uganda", "title": "Narrativa de Conservação & Campanhas em Redes Sociais", "wtag": "Digital & Redes Sociais" },
+    { "org": "Vários Clientes", "title": "Consultor Criativo", "wtag": "Impressão, Design & Cinema" }
+  ]
+}
