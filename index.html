@@ -3,8 +3,65 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Brian Abong - Communications Specialist and Creative Consultant.">
+<meta name="description" content="Brian Abong - Communications Specialist and Creative Consultant based in Uganda. Strategic communications, content and creative consulting for NGOs, development organisations & brands.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Brian Abong">
+<meta name="keywords" content="Brian Abong, communications specialist Uganda, creative consultant, NGO communications, content strategist, visibility officer, Kampala communications">
+<link rel="canonical" href="https://brianabong256.github.io/babong256/">
 <title>Brian Abong - Communications &amp; Creative</title>
+
+<!-- hreflang alternates for the language variants (?lang=xx keeps the same page, tells search engines each locale exists) -->
+<link rel="alternate" hreflang="en" href="https://brianabong256.github.io/babong256/">
+<link rel="alternate" hreflang="fr" href="https://brianabong256.github.io/babong256/?lang=fr">
+<link rel="alternate" hreflang="sw" href="https://brianabong256.github.io/babong256/?lang=sw">
+<link rel="alternate" hreflang="de" href="https://brianabong256.github.io/babong256/?lang=de">
+<link rel="alternate" hreflang="pt" href="https://brianabong256.github.io/babong256/?lang=pt">
+<link rel="alternate" hreflang="x-default" href="https://brianabong256.github.io/babong256/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Brian Abong - Communications &amp; Creative">
+<meta property="og:description" content="Strategic communications, content creation &amp; creative consulting for NGOs, development organisations &amp; brands.">
+<meta property="og:url" content="https://brianabong256.github.io/babong256/">
+<meta property="og:image" content="https://brianabong256.github.io/babong256/BAbong%20Profile-01.png">
+<meta property="og:locale" content="en_UG">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="sw_KE">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="pt_PT">
+<meta property="og:site_name" content="Brian Abong">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Brian Abong - Communications &amp; Creative">
+<meta name="twitter:description" content="Strategic communications, content creation &amp; creative consulting for NGOs, development organisations &amp; brands.">
+<meta name="twitter:image" content="https://brianabong256.github.io/babong256/BAbong%20Profile-01.png">
+
+<!-- Structured data for Search Console / rich results -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Brian Abong",
+  "jobTitle": "Communications Specialist & Creative Consultant",
+  "url": "https://brianabong256.github.io/babong256/",
+  "image": "https://brianabong256.github.io/babong256/BAbong%20Profile-01.png",
+  "email": "mailto:abongbryan@yahoo.com",
+  "sameAs": [
+    "https://www.linkedin.com/in/brian-abong/",
+    "https://www.youtube.com/@brianabong8612"
+  ],
+  "address": { "@type": "PostalAddress", "addressCountry": "UG" },
+  "knowsLanguage": ["en", "fr", "sw", "de", "pt"],
+  "worksFor": [
+    { "@type": "Organization", "name": "Associazione Centro Aiuti Volontari" },
+    { "@type": "Organization", "name": "Plan International Uganda" },
+    { "@type": "Organization", "name": "Nature Uganda" },
+    { "@type": "Organization", "name": "National Water & Sewerage Corporation" }
+  ]
+}
+</script>
+
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
 
 <!-- ════════════════════════════════════════════════════════
@@ -46,6 +103,22 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
 #counter{position:fixed;top:2.5rem;right:3rem;font-family:"Montserrat",sans-serif;font-size:.7rem;letter-spacing:.2em;color:var(--muted);z-index:101}
 #counter span{color:var(--orange)}
 
+/* LANGUAGE SWITCHER */
+#langSwitch{position:fixed;top:2.5rem;right:9.5rem;z-index:101;font-family:"Montserrat",sans-serif}
+#langBtn{background:none;border:1px solid var(--bark);color:var(--sand);cursor:pointer;font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;padding:.35rem .7rem;display:flex;align-items:center;gap:.4rem;transition:border-color .2s,color .2s}
+#langBtn:hover{border-color:var(--orange);color:var(--orange)}
+#langBtn svg{width:11px;height:11px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .2s}
+#langBtn.open svg{transform:rotate(180deg)}
+#langMenu{position:absolute;top:calc(100% + 6px);right:0;background:var(--deep);border:1px solid var(--bark);min-width:120px;display:none;flex-direction:column}
+#langMenu.open{display:flex}
+#langMenu button{background:none;border:none;color:var(--muted);font-family:"Montserrat",sans-serif;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;text-align:left;padding:.55rem .8rem;cursor:pointer;transition:background .2s,color .2s}
+#langMenu button:hover{background:var(--earth);color:var(--orange)}
+#langMenu button.active{color:var(--orange)}
+@media(max-width:768px){
+  #langSwitch{top:auto;bottom:5.5rem;right:1.5rem}
+  #langMenu{top:auto;bottom:calc(100% + 6px)}
+}
+
 /* KENTE EDGE STRIPS */
 .edge-strip{position:fixed;top:0;height:100vh;z-index:3;pointer-events:none;width:68px}
 .edge-strip.left{left:0;-webkit-mask:linear-gradient(to right,rgba(0,0,0,.6) 10%,transparent);mask:linear-gradient(to right,rgba(0,0,0,.6) 10%,transparent)}
@@ -68,8 +141,10 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
 .grid-lines{position:absolute;inset:0;opacity:.04}
 .grid-lines line{stroke:var(--white);stroke-width:.5}
 .accent-block{position:absolute;right:0;top:0;width:42%;height:100%;background:var(--earth);clip-path:polygon(18% 0,100% 0,100% 100%,0% 100%)}
-.tag{position:absolute;top:5.2rem;left:3rem;font-family:"Montserrat",sans-serif;font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
-.name-block{position:absolute;left:3rem;top:50%;transform:translateY(-55%)}
+.hero-content{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;padding:5.2rem 3rem 2.5rem 3rem;pointer-events:none}
+.hero-content>*{pointer-events:auto}
+.tag{font-family:"Montserrat",sans-serif;font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);flex-shrink:0}
+.name-block{flex:1 1 auto;display:flex;flex-direction:column;justify-content:center;min-height:0}
 .p-hero h1{font-family:"Playfair Display",serif;font-size:clamp(2.8rem,6vw,5.4rem);color:var(--white);line-height:.94;font-weight:700}
 .p-hero h1 em{font-style:italic;color:var(--orange);display:inline-block;animation:wordFloat 1.5s ease-in-out infinite}
 @keyframes wordFloat{0%,100%{transform:translateY(0) rotate(0)}40%{transform:translateY(-6px) rotate(-1deg)}70%{transform:translateY(-3px) rotate(.5deg)}}
@@ -81,7 +156,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
 .stat-block .bignum{font-family:"Montserrat",sans-serif;font-size:clamp(5rem,9vw,8rem);line-height:1;color:var(--white);font-weight:700}
 .stat-block .yrs{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
 .stat-block .yrs span{color:var(--sand)}
-.scroll-hint{position:absolute;bottom:2.5rem;left:3rem;display:flex;align-items:center;gap:.75rem;font-family:"Montserrat",sans-serif;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.scroll-hint{flex-shrink:0;display:flex;align-items:center;gap:.75rem;font-family:"Montserrat",sans-serif;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
 .scroll-hint .line{width:36px;height:1px;background:var(--muted)}
 
 /* HERO MARK */
@@ -187,7 +262,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
 /* MODAL */
 .modal-overlay{position:fixed;inset:0;z-index:500;display:flex;align-items:center;justify-content:center;background:rgba(13,12,10,0);backdrop-filter:blur(0px);pointer-events:none;transition:background .45s,backdrop-filter .45s}
 .modal-overlay.open{background:rgba(13,12,10,.93);backdrop-filter:blur(10px);pointer-events:all}
-.modal-card{width:min(90vw,980px);height:min(88vh,600px);background:var(--deep);display:flex;flex-direction:column;border:1px solid var(--bark);transform:translateY(40px) scale(.97);opacity:0;transition:transform .5s cubic-bezier(.22,1,.36,1),opacity .45s}
+.modal-card{width:min(90vw,980px);height:min(90vh,720px);background:var(--deep);display:flex;flex-direction:column;border:1px solid var(--bark);transform:translateY(40px) scale(.97);opacity:0;transition:transform .5s cubic-bezier(.22,1,.36,1),opacity .45s}
 .modal-overlay.open .modal-card{transform:translateY(0) scale(1);opacity:1}
 .modal-header{display:flex;align-items:center;justify-content:space-between;padding:.7rem 1.4rem;border-bottom:1px solid var(--bark);flex-shrink:0;gap:1rem}
 .modal-cat-tag{font-family:"Montserrat",sans-serif;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--orange);background:rgba(246,175,24,.1);border:1px solid rgba(246,175,24,.25);padding:.22rem .7rem}
@@ -203,24 +278,19 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
 .modal-visual-inner{width:100%;height:100%;position:relative}
 
 /* MEDIA TYPES */
-/* YouTube inline iframe */
 .yt-iframe-wrap{width:100%;height:100%;position:relative;background:#000}
 .yt-iframe-wrap iframe{width:100%;height:100%;border:none;display:block}
 
-/* Swipe hint overlay */
 .swipe-hint{position:absolute;bottom:3.5rem;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:.5rem;font-family:"Montserrat",sans-serif;font-size:.5rem;letter-spacing:.15em;text-transform:uppercase;color:var(--white);background:rgba(13,12,10,.75);border:1px solid rgba(246,175,24,.3);padding:.3rem .8rem;border-radius:20px;pointer-events:none;z-index:10;white-space:nowrap;animation:swipeHintFade 3s 1s ease forwards}
 @keyframes swipeHintFade{0%{opacity:1}80%{opacity:1}100%{opacity:0}}
 .swipe-hint svg{width:12px;height:12px;stroke:var(--orange);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;animation:swipeArrowBounce 1s ease-in-out infinite}
 @keyframes swipeArrowBounce{0%,100%{transform:translateX(0)}50%{transform:translateX(4px)}}
 
-/* Google Drive embed */
 .drive-frame{width:100%;height:100%;border:none;display:block;background:var(--black)}
 
-/* Social embed */
 .social-open-btn{position:absolute;bottom:.6rem;left:50%;transform:translateX(-50%);font-family:"Montserrat",sans-serif;font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;color:var(--white);background:rgba(13,12,10,.75);border:1px solid var(--bark);padding:.3rem .8rem;cursor:pointer;text-decoration:none;white-space:nowrap;transition:border-color .25s,color .25s}
 .social-open-btn:hover{border-color:var(--orange);color:var(--orange)}
 
-/* Source badge */
 .src-badge{position:absolute;top:.5rem;right:.5rem;font-family:"Montserrat",sans-serif;font-size:.5rem;letter-spacing:.12em;text-transform:uppercase;padding:.18rem .5rem;border-radius:2px;font-weight:600;z-index:2}
 .src-badge.yt{background:#ff0000;color:#fff}
 .src-badge.drive{background:#1a73e8;color:#fff}
@@ -233,7 +303,6 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
 .media-ph-abbr{font-family:"Montserrat",sans-serif;font-size:2.5rem;letter-spacing:.15em;color:var(--sand);opacity:.35;position:relative;z-index:1;font-weight:700}
 .modal-main-img{width:100%;height:100%;object-fit:contain;display:block}
 
-/* PROMINENT media nav bar */
 .media-nav{position:absolute;bottom:0;left:0;right:0;padding:.5rem .75rem;background:linear-gradient(transparent,rgba(13,12,10,.92));display:flex;align-items:center;justify-content:space-between;z-index:5;gap:.5rem}
 .media-nav-btn{background:rgba(246,175,24,.15);border:1.5px solid var(--orange);color:var(--orange);cursor:pointer;width:30px;height:30px;display:flex;align-items:center;justify-content:center;transition:background .2s;flex-shrink:0;border-radius:2px}
 .media-nav-btn:hover{background:rgba(246,175,24,.3)}
@@ -246,7 +315,7 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
 .media-thumb img{width:100%;height:100%;object-fit:cover;display:block}
 .media-thumb-ico{width:18px;height:18px}
 
-.modal-info{flex:1;padding:1.75rem 2rem;overflow-y:auto;display:flex;flex-direction:column;justify-content:center;scrollbar-width:thin;scrollbar-color:var(--bark) transparent}
+.modal-info{flex:1;padding:1.75rem 2rem;overflow-y:auto;display:flex;flex-direction:column;justify-content:flex-start;scrollbar-width:thin;scrollbar-color:var(--bark) transparent}
 .modal-info::-webkit-scrollbar{width:3px}
 .modal-info::-webkit-scrollbar-thumb{background:var(--bark)}
 .m-org{font-family:"Montserrat",sans-serif;font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--orange);margin-bottom:.45rem;font-weight:500}
@@ -268,23 +337,18 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
 
 /* ═══ MOBILE ═══ */
 @media(max-width:768px){
-  html,body{overflow-x:hidden}
+  html,body{overflow-x:hidden;cursor:auto}
   .cursor{display:none}
   .panel{overflow-y:auto;-webkit-overflow-scrolling:touch}
   #logo{left:1.5rem;font-size:.82rem}
   #counter{right:1.5rem}
   #prev{left:.2rem}#next{right:.2rem}
 
-  /* Hide desktop-only elements */
   .accent-block,.stat-block,.hero-mark-wrap,.edge-strip{display:none}
 
-  /* Hero */
-  .name-block{left:1.5rem;right:1.5rem;top:45%;transform:translateY(-50%)}
-  .tag,.scroll-hint{left:1.5rem}
-  .tag{top:4.5rem}
+  .hero-content{padding:4.5rem 1.5rem 2rem 1.5rem}
   .p-hero .sub{max-width:100%}
 
-  /* ── About: stacked layout ── */
   .p-about{overflow-y:auto}
   .p-about .inner{
     position:relative;inset:auto;
@@ -293,7 +357,6 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
     display:flex;flex-direction:column;
     justify-content:flex-start;
   }
-  /* Mobile about-pic: centered diamond at top of content */
   .about-pic-wrap{
     position:relative;right:auto;top:auto;bottom:auto;
     width:100%;
@@ -310,22 +373,17 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
     animation:diamondPop .7s .2s cubic-bezier(.34,1.56,.64,1) both;
   }
   @keyframes diamondPop{from{opacity:0;transform:scale(.3) rotate(-45deg)}to{opacity:1;transform:scale(1) rotate(0)}}
-  /* Show stat items inline on mobile */
   .stat-item{display:flex;flex-direction:column;align-items:center;}
   .stat-item .num{font-size:2.2rem}
 
-  /* Services */
   .p-services .inner{position:relative;inset:auto;padding:5rem 1.5rem 3rem;min-height:100vh;display:block}
   .services-grid{grid-template-columns:1fr}
 
-  /* Work */
   .p-work .inner{position:relative;inset:auto;padding:5rem 1.5rem 3rem;min-height:100vh;display:block}
 
-  /* Skills */
   .p-skills .inner{position:relative;inset:auto;padding:5rem 1.5rem 3rem;min-height:100vh;display:block}
   .skills-cols{grid-template-columns:1fr;gap:1.5rem}
 
-  /* Contact: stacked, logo panel below links */
   .p-contact .inner{
     position:relative;inset:auto;
     width:100%;
@@ -333,7 +391,6 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
     min-height:100vh;
     display:block;
   }
-  /* Contact logo below links on mobile */
   .logo-panel{
     position:relative;right:auto;top:auto;bottom:auto;
     width:100%;
@@ -342,7 +399,6 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
   }
   .abong-logo{max-width:160px}
 
-  /* ── MODAL: stacked on mobile, media on top ── */
   .modal-card{
     width:96vw;
     height:92vh;
@@ -356,13 +412,11 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
     flex-shrink:0;
   }
   .modal-info{padding:1.25rem;flex:1}
-  /* Drive embeds need a taller, ratio-based viewport on mobile so video isn't cropped */
   .modal-visual.media-drive{
     height:62vw;
     min-height:62vw;
     max-height:50vh;
   }
-  /* Make media nav more touch-friendly on mobile */
   .media-nav-btn{width:36px;height:36px}
   .media-thumb{width:44px;height:44px}
 }
@@ -406,6 +460,19 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
 <div class="cursor" id="cursor"></div>
 <div id="logo">B<em>.</em>ABONG</div>
 <div id="counter"><span id="cur">01</span> / 06</div>
+<div id="langSwitch">
+  <button id="langBtn" aria-haspopup="true" aria-expanded="false">
+    <span id="langBtnLabel">EN</span>
+    <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+  </button>
+  <div id="langMenu" role="menu">
+    <button data-lang="en" role="menuitem">English</button>
+    <button data-lang="fr" role="menuitem">Français</button>
+    <button data-lang="sw" role="menuitem">Kiswahili</button>
+    <button data-lang="de" role="menuitem">Deutsch</button>
+    <button data-lang="pt" role="menuitem">Português</button>
+  </div>
+</div>
 <button class="arrow" id="prev" aria-label="Previous"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
 <button class="arrow" id="next" aria-label="Next"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
 <div id="nav">
@@ -471,20 +538,22 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
       </g>
     </svg>
   </div>
-  <div class="tag anim-1">Communications &middot; Creative &middot; Strategy</div>
-  <div class="name-block">
-    <h1 class="anim-2">Stories<br>that <em>move</em><br>people.</h1>
-    <p class="sub anim-3">Strategic communications, content creation &amp; creative consulting for NGOs, development organisations &amp; brands.</p>
-    <button class="cta anim-4" onclick="goTo(1)">
-      Explore my work
-      <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-    </button>
+  <div class="hero-content">
+    <div class="tag anim-1">Communications &middot; Creative &middot; Strategy</div>
+    <div class="name-block">
+      <h1 class="anim-2">Stories<br>that <em>move</em><br>people.</h1>
+      <p class="sub anim-3">Strategic communications, content creation &amp; creative consulting for NGOs, development organisations &amp; brands.</p>
+      <button class="cta anim-4" onclick="goTo(1)">
+        Explore my work
+        <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </button>
+    </div>
+    <div class="scroll-hint anim-5"><div class="line"></div>Use arrows or keys to navigate</div>
   </div>
   <div class="stat-block anim-3">
     <div class="bignum">11<span style="color:var(--orange)">+</span></div>
     <div class="yrs"><span>Years</span><br>across Uganda &amp; beyond</div>
   </div>
-  <div class="scroll-hint anim-5"><div class="line"></div>Use arrows or keys to navigate</div>
 </div>
 
 <!-- PANEL 2: ABOUT -->
@@ -505,13 +574,11 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
       <div class="org-pill">Fields Of Life</div>
       <div class="org-pill">M Toxicology</div>
     </div>
-    <!-- Download CV -->
     <a class="cv-btn anim-5" href="BrianAbong_CV.pdf" download="BrianAbong_CV.pdf">
       <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       Download CV
     </a>
   </div>
-  <!-- About pic + stats column -->
   <div class="about-pic-wrap">
     <div class="about-img-diamond">
       <img src="BAbong Profile-01.png" alt="Brian Abong" onerror="this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;width:100%;height:100%;background:var(--bark);font-family:Montserrat,sans-serif;font-size:2rem;font-weight:700;color:var(--orange);opacity:.6\'>BA</div>'">
@@ -558,23 +625,23 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
     <div class="section-label anim-1">Selected Work</div>
     <h2 class="anim-2">Projects &amp;<br><em>campaigns</em></h2>
     <div class="work-list" id="workList">
-      <div class="work-item anim-4" onclick="openModal(4)">
+      <div class="work-item anim-4" data-work-index="4" onclick="openModal(4)">
         <div><div class="wi-org">Various Clients</div><div class="wi-title">Creative Consultant</div></div>
         <div class="wi-right"><div class="wi-tag">Print, Design &amp; Film</div><svg class="wi-arr" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
       </div>
-      <div class="work-item anim-2" onclick="openModal(1)">
+      <div class="work-item anim-2" data-work-index="1" onclick="openModal(1)">
         <div><div class="wi-org">Associazione Centro Aiuti Volontari</div><div class="wi-title">Donor Compliant Communications</div></div>
         <div class="wi-right"><div class="wi-tag">Communications</div><svg class="wi-arr" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
       </div>
-      <div class="work-item anim-3" onclick="openModal(2)">
+      <div class="work-item anim-3" data-work-index="2" onclick="openModal(2)">
         <div><div class="wi-org">Plan International Uganda</div><div class="wi-title">Programme Visibility &amp; Communications</div></div>
         <div class="wi-right"><div class="wi-tag">Strategy</div><svg class="wi-arr" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
       </div>
-      <div class="work-item anim-2" onclick="openModal(0)">
+      <div class="work-item anim-2" data-work-index="0" onclick="openModal(0)">
         <div><div class="wi-org">National Water &amp; Sewerage Corporation</div><div class="wi-title">Events, Branding &amp; Digital Communications</div></div>
         <div class="wi-right"><div class="wi-tag">Web &amp; Digital</div><svg class="wi-arr" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
       </div>
-      <div class="work-item anim-3" onclick="openModal(3)">
+      <div class="work-item anim-3" data-work-index="3" onclick="openModal(3)">
         <div><div class="wi-org">Nature Uganda</div><div class="wi-title">Conservation Storytelling &amp; Social Media Campaigns</div></div>
         <div class="wi-right"><div class="wi-tag">Digital &amp; Social Media</div><svg class="wi-arr" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
       </div>
@@ -589,20 +656,20 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
     <h2 class="anim-2">Skills &amp;<br><em>expertise</em></h2>
     <div class="skills-cols anim-3">
       <div class="skill-group">
-        <h4>Communication</h4>
-        <div class="skill-bar"><div class="sb-label"><span>News &amp; Feature Writing</span><span>Expert</span></div><div class="sb-track"><div class="sb-fill" data-w="0.96"></div></div></div>
-        <div class="skill-bar"><div class="sb-label"><span>Copywriting &amp; Editing</span><span>Expert</span></div><div class="sb-track"><div class="sb-fill" data-w="0.95"></div></div></div>
-        <div class="skill-bar"><div class="sb-label"><span>Social Media Management</span><span>Advanced</span></div><div class="sb-track"><div class="sb-fill" data-w="0.90"></div></div></div>
-        <div class="skill-bar"><div class="sb-label"><span>Communications Strategy</span><span>Advanced</span></div><div class="sb-track"><div class="sb-fill" data-w="0.87"></div></div></div>
-        <div class="skill-bar"><div class="sb-label"><span>Staff Training</span><span>Advanced</span></div><div class="sb-track"><div class="sb-fill" data-w="0.83"></div></div></div>
+        <h4 data-skill-group="1">Communication</h4>
+        <div class="skill-bar"><div class="sb-label"><span data-bar="bars1-0">News &amp; Feature Writing</span><span data-level="expert">Expert</span></div><div class="sb-track"><div class="sb-fill" data-w="0.96"></div></div></div>
+        <div class="skill-bar"><div class="sb-label"><span data-bar="bars1-1">Copywriting &amp; Editing</span><span data-level="expert">Expert</span></div><div class="sb-track"><div class="sb-fill" data-w="0.95"></div></div></div>
+        <div class="skill-bar"><div class="sb-label"><span data-bar="bars1-2">Social Media Management</span><span data-level="advanced">Advanced</span></div><div class="sb-track"><div class="sb-fill" data-w="0.90"></div></div></div>
+        <div class="skill-bar"><div class="sb-label"><span data-bar="bars1-3">Communications Strategy</span><span data-level="advanced">Advanced</span></div><div class="sb-track"><div class="sb-fill" data-w="0.87"></div></div></div>
+        <div class="skill-bar"><div class="sb-label"><span data-bar="bars1-4">Staff Training</span><span data-level="advanced">Advanced</span></div><div class="sb-track"><div class="sb-fill" data-w="0.83"></div></div></div>
       </div>
       <div class="skill-group">
-        <h4>Creative &amp; Technical</h4>
-        <div class="skill-bar"><div class="sb-label"><span>Graphic Design</span><span>Advanced</span></div><div class="sb-track"><div class="sb-fill" data-w="0.88"></div></div></div>
-        <div class="skill-bar"><div class="sb-label"><span>Video Production &amp; Editing</span><span>Advanced</span></div><div class="sb-track"><div class="sb-fill" data-w="0.84"></div></div></div>
-        <div class="skill-bar"><div class="sb-label"><span>Website Design &amp; Management</span><span>Advanced</span></div><div class="sb-track"><div class="sb-fill" data-w="0.82"></div></div></div>
-        <div class="skill-bar"><div class="sb-label"><span>Photography</span><span>Proficient</span></div><div class="sb-track"><div class="sb-fill" data-w="0.78"></div></div></div>
-        <div class="skill-bar"><div class="sb-label"><span>Event Management</span><span>Proficient</span></div><div class="sb-track"><div class="sb-fill" data-w="0.76"></div></div></div>
+        <h4 data-skill-group="2">Creative &amp; Technical</h4>
+        <div class="skill-bar"><div class="sb-label"><span data-bar="bars2-0">Graphic Design</span><span data-level="advanced">Advanced</span></div><div class="sb-track"><div class="sb-fill" data-w="0.88"></div></div></div>
+        <div class="skill-bar"><div class="sb-label"><span data-bar="bars2-1">Video Production &amp; Editing</span><span data-level="advanced">Advanced</span></div><div class="sb-track"><div class="sb-fill" data-w="0.84"></div></div></div>
+        <div class="skill-bar"><div class="sb-label"><span data-bar="bars2-2">Website Design &amp; Management</span><span data-level="advanced">Advanced</span></div><div class="sb-track"><div class="sb-fill" data-w="0.82"></div></div></div>
+        <div class="skill-bar"><div class="sb-label"><span data-bar="bars2-3">Photography</span><span data-level="proficient">Proficient</span></div><div class="sb-track"><div class="sb-fill" data-w="0.78"></div></div></div>
+        <div class="skill-bar"><div class="sb-label"><span data-bar="bars2-4">Event Management</span><span data-level="proficient">Proficient</span></div><div class="sb-track"><div class="sb-fill" data-w="0.76"></div></div></div>
       </div>
     </div>
     <div class="tools anim-4" id="skillPills">
@@ -643,7 +710,6 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
     <div class="site-footer anim-5">&copy; Designed by Brian Abong 2026</div>
   </div>
 
-  <!-- ANIMATED PEN-DRAW LOGO -->
   <div class="logo-panel anim-3">
     <svg class="abong-logo" viewBox="0 0 450 450" xmlns="http://www.w3.org/2000/svg">
       <path id="logoPath" class="logo-path"
@@ -720,6 +786,179 @@ document.addEventListener("mousemove",function(e){cursor.style.left=e.clientX+"p
 document.addEventListener("mousedown",function(){cursor.classList.add("big");});
 document.addEventListener("mouseup",function(){cursor.classList.remove("big");});
 
+// ══════════════════════════════════════════════════════════════
+// I18N — lightweight multilingual engine
+// Loads /lang/{code}.json on demand, caches in memory + localStorage,
+// and repaints all translatable text. No server, no API key, no build step.
+// ══════════════════════════════════════════════════════════════
+var SUPPORTED_LANGS=["en","fr","sw","de","pt"];
+var LANG_NAMES={en:"EN",fr:"FR",sw:"SW",de:"DE",pt:"PT"};
+var langCache={};
+var currentLang="en";
+
+function detectInitialLang(){
+  try{
+    var urlLang=new URLSearchParams(window.location.search).get("lang");
+    if(urlLang && SUPPORTED_LANGS.indexOf(urlLang)!==-1) return urlLang;
+  }catch(e){}
+  try{
+    var saved=localStorage.getItem("site_lang");
+    if(saved && SUPPORTED_LANGS.indexOf(saved)!==-1) return saved;
+  }catch(e){}
+  var nav=(navigator.language||navigator.userLanguage||"en").slice(0,2).toLowerCase();
+  return SUPPORTED_LANGS.indexOf(nav)!==-1 ? nav : "en";
+}
+
+function loadLang(code){
+  if(langCache[code]) return Promise.resolve(langCache[code]);
+  return fetch("lang/"+code+".json")
+    .then(function(r){ if(!r.ok) throw new Error("lang fetch failed: "+code); return r.json(); })
+    .then(function(data){ langCache[code]=data; return data; });
+}
+
+function setLang(code){
+  if(SUPPORTED_LANGS.indexOf(code)===-1) code="en";
+  loadLang(code).then(function(t){
+    currentLang=code;
+    try{ localStorage.setItem("site_lang", code); }catch(e){}
+    document.documentElement.setAttribute("lang", code);
+    document.getElementById("langBtnLabel").textContent=LANG_NAMES[code];
+    document.querySelectorAll("#langMenu button").forEach(function(b){
+      b.classList.toggle("active", b.dataset.lang===code);
+    });
+    applyTranslations(t);
+    // If a project modal is open, re-render it in the new language
+    if(document.getElementById("modal").classList.contains("open")){
+      renderModal(curProj,null);
+    }
+  }).catch(function(err){
+    console.error(err);
+    if(code!=="en") setLang("en");
+  });
+}
+
+function setTextPreservingChildEls(el, text, keepSelectors){
+  if(!el) return;
+  var kept=(keepSelectors||[]).map(function(sel){return el.querySelector(sel);}).filter(Boolean);
+  el.textContent="";
+  el.appendChild(document.createTextNode(text));
+  kept.forEach(function(k){ el.appendChild(k); });
+}
+
+function applyTranslations(t){
+  document.title=t.meta.title;
+  var metaDesc=document.querySelector('meta[name="description"]');
+  if(metaDesc) metaDesc.setAttribute("content", t.meta.description);
+  var ogTitle=document.querySelector('meta[property="og:title"]');
+  if(ogTitle) ogTitle.setAttribute("content", t.meta.title);
+  var ogDesc=document.querySelector('meta[property="og:description"]');
+  if(ogDesc) ogDesc.setAttribute("content", t.meta.description);
+
+  document.getElementById("prev").setAttribute("aria-label", t.nav.prev);
+  document.getElementById("next").setAttribute("aria-label", t.nav.next);
+
+  // HERO
+  var heroTag=document.querySelector(".p-hero .tag");
+  if(heroTag) heroTag.textContent=t.hero.tag;
+  var h1=document.querySelector(".p-hero h1");
+  if(h1) h1.innerHTML=t.hero.title_line1+"<br>"+t.hero.title_pre+" <em>"+t.hero.title_em+"</em><br>"+t.hero.title_line3;
+  var sub=document.querySelector(".p-hero .sub");
+  if(sub) sub.textContent=t.hero.sub;
+  var cta=document.querySelector(".p-hero .cta");
+  if(cta) setTextPreservingChildEls(cta, t.hero.cta+" ", ["svg"]);
+  var bignum=document.querySelector(".stat-block .bignum");
+  if(bignum) bignum.innerHTML=t.hero.years_number+'<span style="color:var(--orange)">+</span>';
+  var yrs=document.querySelector(".stat-block .yrs");
+  if(yrs) yrs.innerHTML="<span>"+t.hero.years_label1+"</span><br>"+t.hero.years_label2;
+  var scrollHint=document.querySelector(".p-hero .scroll-hint");
+  if(scrollHint){
+    var line=scrollHint.querySelector(".line");
+    scrollHint.textContent="";
+    if(line) scrollHint.appendChild(line);
+    scrollHint.appendChild(document.createTextNode(t.hero.scroll_hint));
+  }
+
+  // ABOUT
+  var aboutLabel=document.querySelector(".p-about .section-label");
+  if(aboutLabel) aboutLabel.textContent=t.about.label;
+  var aboutH2=document.querySelector(".p-about h2");
+  if(aboutH2) aboutH2.innerHTML=t.about.h2_line1+"<br><em>"+t.about.h2_em+"</em>";
+  var aboutPs=document.querySelectorAll(".p-about .inner > p");
+  if(aboutPs[0]) aboutPs[0].textContent=t.about.p1;
+  if(aboutPs[1]) aboutPs[1].textContent=t.about.p2;
+  var cvBtn=document.querySelector(".cv-btn");
+  if(cvBtn) setTextPreservingChildEls(cvBtn, t.about.cv_button+" ", ["svg"]);
+  var lbls=document.querySelectorAll(".about-pic-wrap .stat-item .lbl");
+  if(lbls[0]) lbls[0].textContent=t.about.stat_orgs;
+  if(lbls[1]) lbls[1].textContent=t.about.stat_sectors;
+  if(lbls[2]) lbls[2].textContent=t.about.stat_years;
+
+  // SERVICES
+  var svcLabel=document.querySelector(".p-services .section-label");
+  if(svcLabel) svcLabel.textContent=t.services.label;
+  var svcH2=document.querySelector(".p-services h2");
+  if(svcH2) svcH2.innerHTML=t.services.h2_line1+"<br><em>"+t.services.h2_em+"</em>";
+  document.querySelectorAll(".svc").forEach(function(el,i){
+    var item=t.services.items[i]; if(!item) return;
+    var h3=el.querySelector("h3"); if(h3) h3.textContent=item.title;
+    var p=el.querySelector("p"); if(p) p.textContent=item.desc;
+  });
+
+  // WORK
+  var workLabel=document.querySelector(".p-work .section-label");
+  if(workLabel) workLabel.textContent=t.work.label;
+  var workH2=document.querySelector(".p-work h2");
+  if(workH2) workH2.innerHTML=t.work.h2_line1+"<br><em>"+t.work.h2_em+"</em>";
+  document.querySelectorAll(".work-item").forEach(function(el){
+    var idx=+el.dataset.workIndex;
+    var item=t.work_items[idx]; if(!item) return;
+    var org=el.querySelector(".wi-org"); if(org) org.textContent=item.org;
+    var title=el.querySelector(".wi-title"); if(title) title.textContent=item.title;
+    var tag=el.querySelector(".wi-tag"); if(tag) tag.textContent=item.wtag;
+  });
+
+  // SKILLS
+  var skillsLabel=document.querySelector(".p-skills .section-label");
+  if(skillsLabel) skillsLabel.textContent=t.skills.label;
+  var skillsH2=document.querySelector(".p-skills h2");
+  if(skillsH2) skillsH2.innerHTML=t.skills.h2_line1+"<br><em>"+t.skills.h2_em+"</em>";
+  document.querySelectorAll('[data-skill-group="1"]').forEach(function(el){el.textContent=t.skills.group1_title;});
+  document.querySelectorAll('[data-skill-group="2"]').forEach(function(el){el.textContent=t.skills.group2_title;});
+  document.querySelectorAll("[data-bar]").forEach(function(el){
+    var parts=el.dataset.bar.split("-"); // e.g. bars1-0
+    var arr=t.skills[parts[0]];
+    if(arr && arr[+parts[1]]!==undefined) el.textContent=arr[+parts[1]];
+  });
+  document.querySelectorAll("[data-level]").forEach(function(el){
+    var lvl=t.skills.levels[el.dataset.level];
+    if(lvl) el.textContent=lvl;
+  });
+
+  // CONTACT
+  var contactLabel=document.querySelector(".p-contact .section-label");
+  if(contactLabel) contactLabel.textContent=t.contact.label;
+  var contactH2=document.querySelector(".p-contact h2");
+  if(contactH2) contactH2.innerHTML=t.contact.h2_line1+"<br>"+t.contact.h2_pre+" <em>"+t.contact.h2_em+"</em>";
+  var tagline=document.querySelector(".p-contact .tagline");
+  if(tagline) tagline.textContent=t.contact.tagline;
+  var clLabels=document.querySelectorAll(".cl-label");
+  if(clLabels[0]) clLabels[0].textContent=t.contact.email_label;
+  if(clLabels[1]) clLabels[1].textContent=t.contact.linkedin_label;
+  if(clLabels[2]) clLabels[2].textContent=t.contact.whatsapp_label;
+  if(clLabels[3]) clLabels[3].textContent=t.contact.youtube_label;
+  var avail=document.querySelector(".availability");
+  if(avail) setTextPreservingChildEls(avail, t.contact.availability, [".avail-dot"]);
+  // re-order dot first since setText appended text after kept nodes
+  if(avail){
+    var dot=avail.querySelector(".avail-dot");
+    if(dot) avail.insertBefore(dot, avail.firstChild);
+  }
+  var footer=document.querySelector(".site-footer");
+  if(footer) footer.textContent=t.contact.footer;
+
+  document.title=t.meta.title;
+}
+
 // ── SLIDE NAVIGATION ──
 var cur=0,total=6;
 var stage=document.getElementById("stage");
@@ -758,9 +997,6 @@ function goTo(n){
 }
 
 sendPanelView(0);
-
-     sendPanelView(0);
-setTimeout(function(){document.querySelectorAll(".panel")[0].classList.add("panel-entered");},200);
 setTimeout(function(){document.querySelectorAll(".panel")[0].classList.add("panel-entered");},200);
 
 
@@ -795,13 +1031,36 @@ document.getElementById("next").addEventListener("click",function(){goTo(cur+1);
 document.getElementById("prev").addEventListener("click",function(){goTo(cur-1);});
 dots.forEach(function(d){d.addEventListener("click",function(){goTo(+d.dataset.i);});});
 
+// ── LANGUAGE SWITCHER UI ──
+var langBtn=document.getElementById("langBtn");
+var langMenu=document.getElementById("langMenu");
+langBtn.addEventListener("click",function(e){
+  e.stopPropagation();
+  var isOpen=langMenu.classList.toggle("open");
+  langBtn.classList.toggle("open",isOpen);
+  langBtn.setAttribute("aria-expanded",isOpen?"true":"false");
+});
+document.querySelectorAll("#langMenu button").forEach(function(b){
+  b.addEventListener("click",function(){
+    setLang(b.dataset.lang);
+    langMenu.classList.remove("open");
+    langBtn.classList.remove("open");
+  });
+});
+document.addEventListener("click",function(e){
+  if(!langMenu.contains(e.target) && e.target!==langBtn){
+    langMenu.classList.remove("open");
+    langBtn.classList.remove("open");
+  }
+});
+setLang(detectInitialLang());
+
 document.addEventListener("keydown",function(e){
   var mo=document.getElementById("modal").classList.contains("open");
   if(mo){if(e.key==="Escape")closeModal();if(e.key==="ArrowRight")navModal(1);if(e.key==="ArrowLeft")navModal(-1);}
   else{if(e.key==="ArrowRight")goTo(cur+1);if(e.key==="ArrowLeft")goTo(cur-1);}
 });
 
-// Touch swipe for slides
 var tX=0;
 document.addEventListener("touchstart",function(e){tX=e.touches[0].clientX;},{passive:true});
 document.addEventListener("touchend",function(e){
@@ -816,7 +1075,6 @@ setTimeout(function(){document.querySelectorAll(".panel")[0].classList.add("pane
 // PORTFOLIO DATA
 // ══════════════════════════════════════════════════════════════
 var projects=[
-  // ── 0. NWSC ──
   {
     org:"National Water &amp; Sewerage Corporation",
     title:"Events, Branding &amp; Digital Communications",
@@ -824,6 +1082,10 @@ var projects=[
     role:"Website &amp; Graphics Officer",
     year:"Aug 2014 &ndash; June 2022",
     desc:"Managed digital communications, event coverage and branding for Uganda's national water utility. Produced event promo videos and branded social media content that raised public awareness of NWSC services and events across Uganda.",
+    myRole:"As Website &amp; Graphics Officer, I owned NWSC's digital presence end-to-end &mdash; from website content and updates to graphics for internal and public-facing campaigns, working closely with technical and events teams.",
+    challenge:"NWSC's work is largely technical and infrastructure-based, making it hard to communicate in ways that felt relevant and engaging to everyday Ugandans, while events needed strong visibility to drive turnout and public awareness.",
+    contribution:"I filmed and edited event promo videos (including the AFWA event teaser), managed the corporate website, and produced branded social media graphics and campaigns that translated technical utility work into accessible public messaging.",
+    outcome:"Raised public awareness of NWSC services and events, strengthened the organisation's digital and brand presence, and delivered a body of promotional video and graphic content used across multiple public engagements.",
     deliverables:["Event teaser &amp; promo videos","Social media content &amp; management","Photography &amp; videography","Press &amp; stakeholder communications","Digital content strategy"],
     tools:["Adobe Premiere","Adobe After Effects","Adobe Photoshop","Canva","WordPress"],
     media:[
@@ -832,7 +1094,6 @@ var projects=[
     abbr:"NWSC",
     grad:"linear-gradient(135deg,#0a1a2a 0%,#0d3050 100%)"
   },
-  // ── 1. ACAV ──
   {
     org:"Associazione Centro Aiuti Volontari",
     title:"Donor Visibility &amp; Communications",
@@ -840,6 +1101,10 @@ var projects=[
     role:"Senior Visibility &amp; Communications Officer",
     year:"Dec 2024 &ndash; Apr 2026",
     desc:"Developed visual, written and video content for ACAV Uganda's social media platforms, translating development and humanitarian work into engaging stories that increased awareness of refugee support, livelihoods, climate resilience, and community development initiatives.",
+    myRole:"As Senior Visibility &amp; Communications Officer, I led ACAV Uganda's storytelling and content output across social media, shaping how the organisation's humanitarian and development programming was seen by donors and the public.",
+    challenge:"Refugee support, livelihoods and climate resilience programming can feel distant or abstract to outside audiences, and donor visibility requirements meant every campaign needed to be both emotionally resonant and evidence-backed.",
+    contribution:"I conceived and produced campaigns end-to-end &mdash; writing concepts, shooting and editing short-form videos and motion graphics, designing infographics, and managing the social calendar &mdash; including the &quot;Love is Action&quot; campaign and the SUIDAC climate change video.",
+    outcome:"Increased public and donor awareness of ACAV's refugee support, livelihoods and climate resilience work, with campaign content that strengthened the organisation's visibility to international donor audiences.",
     deliverables:["Campaign concept development","Social media graphics &amp; strategy","Short-form video production","Motion graphics","Infographics &amp; visual design","Donor visibility materials"],
     tools:["Adobe Photoshop","Adobe Illustrator","Adobe Premiere","After Effects","Google Earth","Buffer"],
     media:[
@@ -849,7 +1114,6 @@ var projects=[
     abbr:"ACAV",
     grad:"linear-gradient(135deg,#0d2030 0%,#1a4060 100%)"
   },
-  // ── 2. Plan International Uganda ──
   {
     org:"Plan International Uganda",
     title:"Programme Visibility &amp; Communications",
@@ -857,6 +1121,10 @@ var projects=[
     role:"Communications Officer",
     year:"Nov 2023 &ndash; Nov 2024",
     desc:"Managed programme communications and visibility for Plan International Uganda across child rights, girls empowerment and development programming. Created content that amplified community voices to international donor and media audiences.",
+    myRole:"As Communications Officer, I was responsible for programme visibility &mdash; turning fieldwork on child rights and girls' empowerment into stories and reports that reached donor and media audiences internationally.",
+    challenge:"Amplifying community and children's voices meant balancing compelling storytelling with strict safeguarding and ethical standards, while still meeting donor reporting expectations on tight quarterly timelines.",
+    contribution:"I produced photography, video and written content from the field (including &quot;The Buddy System&quot; and the International Day of the Girl 2024 campaign), wrote quarterly narrative reports, and coordinated visibility around key programme events.",
+    outcome:"Delivered consistent, donor-ready visibility content that amplified community voices responsibly, strengthening Plan International Uganda's profile with international donors and media.",
     deliverables:["Programme visibility strategy","Donor &amp; media communications","Social media content production","Photography &amp; video production","Quarterly narrative reports","Event communications &amp; coverage"],
     tools:["Adobe Suite","Canva","Microsoft Office","Mailchimp"],
     media:[
@@ -866,7 +1134,6 @@ var projects=[
     abbr:"PI",
     grad:"linear-gradient(135deg,#2c1810 0%,#4a2a18 100%)"
   },
-  // ── 3. Nature Uganda ──
   {
     org:"Nature Uganda",
     title:"Conservation Storytelling &amp; Social Media Campaigns",
@@ -874,6 +1141,10 @@ var projects=[
     role:"Communications Officer",
     year:"June 2022 &ndash; Dec 2022",
     desc:"Produced conservation storytelling content for Uganda's leading birding and environmental organisation. Created multimedia narratives around wildlife, habitats and environmental advocacy to grow public engagement and donor interest.",
+    myRole:"As Communications Officer, I owned Nature Uganda's storytelling output &mdash; writing conservation features, managing social campaigns, and producing short documentaries on wildlife and habitat advocacy.",
+    challenge:"Conservation and birding are niche subjects for most Ugandans, so the work needed fresh, accessible narrative angles to compete for public attention and donor interest against more visible development sectors.",
+    contribution:"I wrote conservation features and articles, produced short documentary content, managed social campaigns such as #VultureAwarenessDay, and kept the website and newsletters updated with fresh storytelling.",
+    outcome:"Grew public engagement with conservation content and strengthened donor interest in Nature Uganda's environmental advocacy work through consistent, story-driven communications.",
     deliverables:["Conservation features &amp; articles","Social media campaign management","Short documentary production","Photography for campaigns","Website content management","Newsletters &amp; donor communications"],
     tools:["Adobe Premiere","Canva","Adobe Photoshop","Adobe After Effects","WordPress"],
     media:[
@@ -882,7 +1153,6 @@ var projects=[
     abbr:"NU",
     grad:"linear-gradient(135deg,#0d1f0d 0%,#1a3d1a 100%)"
   },
-  // ── 4. Creative Consultant / Branding ──
   {
     org:"Various Clients",
     title:"Graphic Design &amp; Branding",
@@ -890,6 +1160,10 @@ var projects=[
     role:"Creative Consultant",
     year:"2013 &ndash; Present",
     desc:"Brand identity, banner design, print collateral and visual assets for NGOs, events and corporate clients across Uganda and beyond.",
+    myRole:"As independent Creative Consultant, I work directly with NGOs, events and corporate clients to design and deliver brand identity and visual assets on a project basis.",
+    challenge:"Smaller organisations and events often lack an in-house designer, and need professional, on-brand materials delivered quickly and independently, without the overhead of a full agency.",
+    contribution:"I designed brand identities and style guides, event and exhibition graphics, banners and print collateral for clients including VSO, ACAV, Fields of Life and M Toxicology, alongside infographics, motion design and voice-over work.",
+    outcome:"Delivered a consistent, professional visual identity across multiple clients' campaigns and events, helping smaller organisations present a polished public image without in-house design resources.",
     deliverables:["Banner &amp; billboard design","Brand identity &amp; style guides","Event &amp; exhibition graphics","Social media templates","Print collateral &amp; publications","Infographics","Motion Design","Voice Over"],
     tools:["Adobe Illustrator","Adobe Photoshop","Adobe InDesign","Canva"],
     media:[
@@ -906,7 +1180,6 @@ var projects=[
   }
 ];
 
-// ── MODAL LOGIC ──
 var curProj=0,curMedia=0,isTrans=false;
 var modalTouchX=0;
 
@@ -922,7 +1195,6 @@ function openModal(i){
   }
 }
 function closeModal(){
-  // Stop any playing iframes
   var vis=document.getElementById("mVisual");
   var iframes=vis.querySelectorAll("iframe");
   iframes.forEach(function(f){f.src=f.src;});
@@ -932,7 +1204,6 @@ function closeModalOutside(e){if(e.target===document.getElementById("modal"))clo
 
 function navModal(dir){
   if(isTrans)return;isTrans=true;
-  // Stop iframes
   var vis=document.getElementById("mVisual");
   var iframes=vis.querySelectorAll("iframe");
   iframes.forEach(function(f){f.src=f.src;});
@@ -952,7 +1223,6 @@ function navModal(dir){
 
 function navMedia(dir){
   var p=projects[curProj];if(!p.media||p.media.length<2)return;
-  // Stop playing iframes before switching
   stopIframes();
   curMedia=(curMedia+dir+p.media.length)%p.media.length;
   renderVisual(p);
@@ -967,7 +1237,6 @@ function stopIframes(){
   iframes.forEach(function(f){var s=f.src;f.src="";f.src=s;});
 }
 
-// Touch swipe inside modal visual for media cycling
 document.getElementById("modal").addEventListener("touchstart",function(e){
   modalTouchX=e.touches[0].clientX;
 },{passive:true});
@@ -1017,7 +1286,6 @@ function renderVisual(p){
   var item=p.media[curMedia];
   var type=item.type||"img";
 
-  // Swipe hint if multiple items
   var swipeHint="";
   if(p.media.length>1){
     swipeHint="<div class='swipe-hint'>"
@@ -1026,13 +1294,11 @@ function renderVisual(p){
       +"</div>";
   }
 
-  // Prominent thumbnail nav bar
   var navBar="";
   if(p.media.length>1){
     var thumbs=p.media.map(function(m,i){
       var ac=i===curMedia?" active":"";
       var thumbContent=srcIcon(m.type||"img");
-      // YouTube thumbs use real thumbnail
       if((m.type||"img")==="yt"&&m.id){
         thumbContent="<img src='https://img.youtube.com/vi/"+m.id+"/default.jpg' alt='thumb'>";
       }
@@ -1049,7 +1315,6 @@ function renderVisual(p){
   var mainHTML="";
 
   if(type==="yt"){
-    // Inline YouTube iframe (no-cookie embed)
     var ytId=item.id;
     mainHTML="<div class='yt-iframe-wrap'>"
       +"<iframe src='https://www.youtube-nocookie.com/embed/"+ytId+"?rel=0&modestbranding=1&playsinline=1' "
@@ -1100,7 +1365,6 @@ function renderVisual(p){
     }
 
   } else {
-    // Plain image
     mainHTML="<img class='modal-main-img' src='"+(item.src||"")+"' alt='"+(item.caption||p.title)+"'>";
   }
 
@@ -1108,18 +1372,39 @@ function renderVisual(p){
 }
 
 function renderModal(i,enterCls){
-  var p=projects[i];
-  document.getElementById("mTag").innerHTML=p.tag;
+  var p=projects[i]; // static: media, tools, abbr, grad, and English fallback text
+  var tr=(langCache[currentLang]||langCache.en); // translated text
+  var ptr=(tr && tr.projects && tr.projects[i]) || {};
+  var wtr=(tr && tr.work_items && tr.work_items[i]) || {};
+  var sec=(tr && tr.modal) || {deliverables:"Deliverables",tools:"Tools",my_role:"My Role",challenge:"The Challenge",contribution:"Your Specific Contribution",outcome:"The Outcome"};
+
+  var org=wtr.org || p.org;
+  var title=wtr.title || p.title;
+  var tag=ptr.tag || p.tag;
+  var role=ptr.role || p.role;
+  var year=ptr.year || p.year;
+  var desc=ptr.desc || p.desc;
+  var myRole=ptr.myRole || p.myRole;
+  var challenge=ptr.challenge || p.challenge;
+  var contribution=ptr.contribution || p.contribution;
+  var outcome=ptr.outcome || p.outcome;
+  var deliverables=ptr.deliverables || p.deliverables;
+
+  document.getElementById("mTag").innerHTML=tag;
   document.getElementById("mCount").textContent=String(i+1).padStart(2,"0")+" / "+String(projects.length).padStart(2,"0");
   renderVisual(p);
-  var delivs=p.deliverables.map(function(d){return "<div class='m-deliverable'>"+d+"</div>";}).join("");
-  var tools=p.tools.map(function(t){return "<span class='org-pill' style='font-size:.58rem;padding:.25rem .7rem;opacity:1'>"+t+"</span>";}).join("");
-  var info="<div class='m-org'>"+p.org+"</div>"
-    +"<div class='m-title'>"+p.title+"</div>"
-    +"<div class='m-meta'>"+p.role+" &nbsp;&middot;&nbsp; "+p.year+"</div>"
-    +"<div class='m-desc'>"+p.desc+"</div>"
-    +"<div style='margin-bottom:.9rem'><div class='m-sec-head'>Deliverables</div>"+delivs+"</div>"
-    +"<div><div class='m-sec-head'>Tools</div><div class='m-tools'>"+tools+"</div></div>";
+  var delivs=deliverables.map(function(d){return "<div class='m-deliverable'>"+d+"</div>";}).join("");
+  var toolsHTML=p.tools.map(function(tool){return "<span class='org-pill' style='font-size:.58rem;padding:.25rem .7rem;opacity:1'>"+tool+"</span>";}).join("");
+  var info="<div class='m-org'>"+org+"</div>"
+    +"<div class='m-title'>"+title+"</div>"
+    +"<div class='m-meta'>"+role+" &nbsp;&middot;&nbsp; "+year+"</div>"
+    +"<div class='m-desc'>"+desc+"</div>"
+    +"<div style='margin-bottom:.9rem'><div class='m-sec-head'>"+sec.my_role+"</div><div class='m-desc' style='margin-bottom:0'>"+myRole+"</div></div>"
+    +"<div style='margin-bottom:.9rem'><div class='m-sec-head'>"+sec.challenge+"</div><div class='m-desc' style='margin-bottom:0'>"+challenge+"</div></div>"
+    +"<div style='margin-bottom:.9rem'><div class='m-sec-head'>"+sec.contribution+"</div><div class='m-desc' style='margin-bottom:0'>"+contribution+"</div></div>"
+    +"<div style='margin-bottom:.9rem'><div class='m-sec-head'>"+sec.outcome+"</div><div class='m-desc' style='margin-bottom:0'>"+outcome+"</div></div>"
+    +"<div style='margin-bottom:.9rem'><div class='m-sec-head'>"+sec.deliverables+"</div>"+delivs+"</div>"
+    +"<div><div class='m-sec-head'>"+sec.tools+"</div><div class='m-tools'>"+toolsHTML+"</div></div>";
   var mInfo=document.getElementById("mInfo");
   mInfo.innerHTML=info;
   if(enterCls){mInfo.classList.add(enterCls);setTimeout(function(){mInfo.classList.remove(enterCls);},350);}
