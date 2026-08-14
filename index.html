@@ -799,6 +799,7 @@ var SUPPORTED_LANGS=["en","fr","sw","de","pt"];
 var LANG_NAMES={en:"EN",fr:"FR",sw:"SW",de:"DE",pt:"PT"};
 var langCache={};
 var currentLang="en";
+var langInitialized=false;
 
 function detectInitialLang(){
   try{
@@ -823,6 +824,8 @@ function loadLang(code){
 function setLang(code){
   if(SUPPORTED_LANGS.indexOf(code)===-1) code="en";
   loadLang(code).then(function(t){
+    var wasInitial=!langInitialized;
+    langInitialized=true;
     currentLang=code;
     try{ localStorage.setItem("site_lang", code); }catch(e){}
     document.documentElement.setAttribute("lang", code);
@@ -834,6 +837,16 @@ function setLang(code){
     // If a project modal is open, re-render it in the new language
     if(document.getElementById("modal").classList.contains("open")){
       renderModal(curProj,null);
+    }
+    // ── GA4 language tracking ──
+    // Tag every subsequent event in this session with the active language...
+    if(typeof gtag==="function"){
+      gtag("set", "user_properties", { site_language: code });
+      // ...and fire a dedicated event so you can see language selection/switches directly in reports
+      gtag("event", "language_selected", {
+        language: code,
+        is_initial: wasInitial
+      });
     }
   }).catch(function(err){
     console.error(err);
