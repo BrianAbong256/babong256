@@ -625,18 +625,31 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
     <div class="section-label anim-1">Selected Work</div>
     <h2 class="anim-2">Projects &amp;<br><em>campaigns</em></h2>
     <div class="work-list" id="workList">
-      <div class="work-item anim-4" data-work-index="4" onclick="openModal(4)">
-        <div><div class="wi-org">Various Clients</div><div class="wi-title">Creative Consultant</div></div>
-        <div class="wi-right"><div class="wi-tag">Print, Design &amp; Film</div><svg class="wi-arr" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
-      </div>
-      <div class="work-item anim-2" data-work-index="1" onclick="openModal(1)">
-        <div><div class="wi-org">ACAV Uganda</div><div class="wi-title">SUIDAC Humanitarian Communications</div></div>
-        <div class="wi-right"><div class="wi-tag">Communications</div><svg class="wi-arr" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
-      </div>
-      <div class="work-item anim-5" data-work-index="5" onclick="openModal(5)">
-        <div><div class="wi-org">LocalWorks</div><div class="wi-title">EcoPrefab Digital Storytelling</div></div>
-        <div class="wi-right"><div class="wi-tag">Content Strategy</div><svg class="wi-arr" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
-      </div>
+  <div class="work-item anim-4" data-work-index="4" onclick="openModal(4)">
+    <div><div class="wi-org">Various Clients</div><div class="wi-title">Creative Consultant</div></div>
+    <div class="wi-right"><div class="wi-tag">Print, Design &amp; Film</div><svg class="wi-arr" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+  </div>
+  <div class="work-item anim-2" data-work-index="1" onclick="openModal(1)">
+    <div><div class="wi-org">ACAV Uganda</div><div class="wi-title">SUIDAC Humanitarian Communications</div></div>
+    <div class="wi-right"><div class="wi-tag">Communications</div><svg class="wi-arr" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+  </div>
+  <div class="work-item anim-5" data-work-index="5" onclick="openModal(5)">
+    <div><div class="wi-org">LocalWorks</div><div class="wi-title">EcoPrefab Digital Storytelling</div></div>
+    <div class="wi-right"><div class="wi-tag">Content Strategy</div><svg class="wi-arr" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+  </div>
+  <div class="work-item anim-3" data-work-index="2" onclick="openModal(2)">
+    <div><div class="wi-org">Plan International Uganda</div><div class="wi-title">International Day of the Girl Child Campaign</div></div>
+    <div class="wi-right"><div class="wi-tag">Strategy</div><svg class="wi-arr" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+  </div>
+  <div class="work-item anim-2" data-work-index="0" onclick="openModal(0)">
+    <div><div class="wi-org">National Water &amp; Sewerage Corporation</div><div class="wi-title">Digital Communications &amp; Website Management</div></div>
+    <div class="wi-right"><div class="wi-tag">Web &amp; Digital</div><svg class="wi-arr" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+  </div>
+  <div class="work-item anim-3" data-work-index="3" onclick="openModal(3)">
+    <div><div class="wi-org">Nature Uganda</div><div class="wi-title">Conservation Communications</div></div>
+    <div class="wi-right"><div class="wi-tag">Digital &amp; Social Media</div><svg class="wi-arr" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
+  </div>
+</div>
       <div class="work-item anim-3" data-work-index="2" onclick="openModal(2)">
         <div><div class="wi-org">Plan International Uganda</div><div class="wi-title">International Day of the Girl Child Campaign</div></div>
         <div class="wi-right"><div class="wi-tag">Strategy</div><svg class="wi-arr" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
@@ -922,16 +935,13 @@ function applyTranslations(t){
   });
 
   // WORK
-  var workLabel=document.querySelector(".p-work .section-label");
-  if(workLabel) workLabel.textContent=t.work.label;
-  var workH2=document.querySelector(".p-work h2");
-  if(workH2) workH2.innerHTML=t.work.h2_line1+"<br><em>"+t.work.h2_em+"</em>";
   document.querySelectorAll(".work-item").forEach(function(el){
-    var idx=+el.dataset.workIndex;
-    var item=t.work_items[idx]; if(!item) return;
-    var org=el.querySelector(".wi-org"); if(org) org.textContent=item.org;
-    var title=el.querySelector(".wi-title"); if(title) title.textContent=item.title;
-    var tag=el.querySelector(".wi-tag"); if(tag) tag.textContent=item.wtag;
+  var idx=+el.dataset.workIndex;
+  var item=t.work_items[idx]; if(!item) return;
+  var org=el.querySelector(".wi-org"); if(org) org.textContent=item.org;
+  var title=el.querySelector(".wi-title"); if(title) title.textContent=item.title;
+  var tag=el.querySelector(".wi-tag"); if(tag) tag.textContent=item.wtag;
+});
   });
 
   // SKILLS
@@ -1092,110 +1102,54 @@ setTimeout(function(){document.querySelectorAll(".panel")[0].classList.add("pane
 // PORTFOLIO DATA
 // ══════════════════════════════════════════════════════════════
 var projects=[
-  {
-    org:"National Water &amp; Sewerage Corporation",
-    title:"Digital Communications &amp; Website Management",
-    tag:"Web &amp; Digital",
-    role:"Website &amp; Graphics Officer",
-    year:"Aug 2014 &ndash; June 2022",
+  { org:"National Water &amp; Sewerage Corporation", title:"Digital Communications &amp; Website Management", tag:"Web &amp; Digital",
+    role:"Website &amp; Graphics Officer", year:"Aug 2014 &ndash; June 2022",
     context:"Digital communications for Uganda's national water utility.",
     contribution:["Managed and redesigned organisational websites using Joomla and WordPress.","Produced digital content supporting public engagement.","Developed visual communication materials."],
     outputs:["Website content","Graphics","Digital campaigns","Publications"],
     tools:["Adobe Premiere","Adobe After Effects","Adobe Photoshop","Canva","WordPress","Joomla"],
-    media:[
-      {type:"yt", id:"TVA4S13veRQ", label:"AFWA Event Promo Teaser"}
-    ],
-    abbr:"NWSC",
-    grad:"linear-gradient(135deg,#0a1a2a 0%,#0d3050 100%)"
-  },
-  {
-    org:"ACAV Uganda",
-    title:"SUIDAC Humanitarian Communications",
-    tag:"Communications &amp; Strategy",
-    role:"Senior Visibility &amp; Communications Officer",
-    year:"Dec 2024 &ndash; Apr 2026",
+    media:[{type:"yt", id:"TVA4S13veRQ", label:"AFWA Event Promo Teaser"}],
+    abbr:"NWSC", grad:"linear-gradient(135deg,#0a1a2a 0%,#0d3050 100%)" },
+  { org:"ACAV Uganda", title:"SUIDAC Humanitarian Communications", tag:"Communications &amp; Strategy",
+    role:"Senior Visibility &amp; Communications Officer", year:"Dec 2024 &ndash; Apr 2026",
     context:"EU-funded project implemented with Cities Alliance and UNOPS supporting urban development and social cohesion in Arua City and Koboko Municipality.",
     contribution:["Developed communication materials supporting project visibility.","Documented community experiences through photography and storytelling.","Produced digital content for stakeholder engagement.","Created multimedia materials including graphics, articles, and social media content."],
     outputs:["Photography","Human-interest stories","Social media content","Visibility materials","Project documentation"],
     tools:["Adobe Photoshop","Adobe Illustrator","Adobe Premiere","After Effects","Google Earth","Buffer"],
-    media:[
-      {type:"yt", id:"77D2w3ELVLY", label:"Love is Action ACAV"},
-      {type:"drive", id:"1sJ2DXrf5miKqBpEX-yCZxHFO-2uDAkSY", label:"SUIDAC Climate Change Video"}
-    ],
-    abbr:"ACAV",
-    grad:"linear-gradient(135deg,#0d2030 0%,#1a4060 100%)"
-  },
-  {
-    org:"Plan International Uganda",
-    title:"International Day of the Girl Child Campaign",
-    tag:"Strategy &amp; Campaign",
-    role:"Communications Officer",
-    year:"Nov 2023 &ndash; Nov 2024",
+    media:[{type:"yt", id:"77D2w3ELVLY", label:"Love is Action ACAV"},{type:"drive", id:"1sJ2DXrf5miKqBpEX-yCZxHFO-2uDAkSY", label:"SUIDAC Climate Change Video"}],
+    abbr:"ACAV", grad:"linear-gradient(135deg,#0d2030 0%,#1a4060 100%)" },
+  { org:"Plan International Uganda", title:"International Day of the Girl Child Campaign", tag:"Strategy &amp; Campaign",
+    role:"Communications Officer", year:"Nov 2023 &ndash; Nov 2024",
     context:"Campaign communications supporting advocacy around girls' rights and empowerment.",
     contribution:["Developed campaign content and digital assets.","Supported storytelling approaches that highlighted girls' experiences.","Created content adapted for online audiences."],
     outputs:["Social media graphics","Campaign copy","Digital storytelling content"],
     tools:["Adobe Suite","Canva","Microsoft Office","Mailchimp"],
-    media:[
-      {type:"drive", id:"1c99cZ6SEC3NifsiVgNBaM3Qfyr406fk-", label:"The Buddy System"},
-      {type:"img", src:"https://pbs.twimg.com/media/GZRVgIVWwAA5wuT?format=jpg&name=small", caption:"International Day of the Girl 2024 — campaign imagery"}
-    ],
-    abbr:"PI",
-    grad:"linear-gradient(135deg,#2c1810 0%,#4a2a18 100%)"
-  },
-  {
-    org:"Nature Uganda",
-    title:"Conservation Communications",
-    tag:"Content &amp; Film",
-    role:"Communications Officer",
-    year:"June 2022 &ndash; Dec 2022",
+    media:[{type:"drive", id:"1c99cZ6SEC3NifsiVgNBaM3Qfyr406fk-", label:"The Buddy System"},{type:"img", src:"https://pbs.twimg.com/media/GZRVgIVWwAA5wuT?format=jpg&name=small", caption:"International Day of the Girl 2024 — campaign imagery"}],
+    abbr:"PI", grad:"linear-gradient(135deg,#2c1810 0%,#4a2a18 100%)" },
+  { org:"Nature Uganda", title:"Conservation Communications", tag:"Content &amp; Film",
+    role:"Communications Officer", year:"June 2022 &ndash; Dec 2022",
     context:"Public engagement and advocacy communications for conservation programmes.",
     contribution:["Produced stories, articles, and digital content.","Supported awareness campaigns.","Documented conservation activities and community engagement."],
     outputs:["Articles","Photography","Social media content","Campaign materials"],
     tools:["Adobe Premiere","Canva","Adobe Photoshop","Adobe After Effects","WordPress"],
-    media:[
-      {type:"drive", id:"1Ea84lf4WTsdwCM7HAZgyg7R90Z7cTNrf", label:"Do you know the vulture species in Uganda? #VultureAwarenessDay"}
-    ],
-    abbr:"NU",
-    grad:"linear-gradient(135deg,#0d1f0d 0%,#1a3d1a 100%)"
-  },
-  {
-    org:"Various Clients",
-    title:"Creative Consultant",
-    tag:"Design &amp; Branding",
-    role:"Creative Consultant",
-    year:"2013 &ndash; Present",
+    media:[{type:"drive", id:"1Ea84lf4WTsdwCM7HAZgyg7R90Z7cTNrf", label:"Do you know the vulture species in Uganda? #VultureAwarenessDay"}],
+    abbr:"NU", grad:"linear-gradient(135deg,#0d1f0d 0%,#1a3d1a 100%)" },
+  { org:"Various Clients", title:"Creative Consultant", tag:"Design &amp; Branding",
+    role:"Creative Consultant", year:"2013 &ndash; Present",
     context:"Independent creative consulting for NGOs, events and corporate clients across Uganda and beyond, delivering brand identity and visual assets on a project basis.",
     contribution:["Designed brand identities and style guides for multiple organisations.","Produced event and exhibition graphics, banners and print collateral.","Delivered infographics, motion design and voice-over work for clients including VSO, ACAV, Fields of Life and M Toxicology."],
     outputs:["Brand identity &amp; style guides","Banners &amp; print collateral","Event &amp; exhibition graphics","Infographics","Motion design","Voice over"],
     tools:["Adobe Illustrator","Adobe Photoshop","Adobe InDesign","Canva"],
-    media:[
-      {type:"img", src:"FOL1.jpg", caption:"VSO Pull Up Banner"},
-      {type:"drive", id:"13KjTBYh6rbOuBpqQe5iV5_kZC3beWuDP", label:"Gantry"},
-      {type:"img", src:"SUIDAC.jpg", caption:"ACAV Banner"},
-      {type:"yt", id:"dHJ5ZGB8sQc", label:"M Tox Safety at Home"},
-      {type:"img", src:"Hallway-01.jpg", caption:"ACAV Office"},
-      {type:"yt", id:"Zr63kQ1oHkE", label:"Jeff Pops"},
-      {type:"img", src:"FOL4.jpg", caption:"FOL II"}
-    ],
-    abbr:"BD",
-    grad:"linear-gradient(135deg,#1a1207 0%,#3d2a08 100%)"
-  },
-  {
-    org:"LocalWorks",
-    title:"EcoPrefab Digital Storytelling",
-    tag:"Content Strategy &amp; Storytelling",
-    role:"Communications Consultant",
-    year:"2025",
+    media:[{type:"img", src:"FOL1.jpg", caption:"VSO Pull Up Banner"},{type:"drive", id:"13KjTBYh6rbOuBpqQe5iV5_kZC3beWuDP", label:"Gantry"},{type:"img", src:"SUIDAC.jpg", caption:"ACAV Banner"},{type:"yt", id:"dHJ5ZGB8sQc", label:"M Tox Safety at Home"},{type:"img", src:"Hallway-01.jpg", caption:"ACAV Office"},{type:"yt", id:"Zr63kQ1oHkE", label:"Jeff Pops"},{type:"img", src:"FOL4.jpg", caption:"FOL II"}],
+    abbr:"BD", grad:"linear-gradient(135deg,#1a1207 0%,#3d2a08 100%)" },
+  { org:"LocalWorks", title:"EcoPrefab Digital Storytelling", tag:"Content Strategy &amp; Storytelling",
+    role:"Communications Consultant", year:"2025",
     context:"Communications for sustainable construction innovation addressing challenges in affordable infrastructure and environmentally responsible building.",
     contribution:["Developed content strategy and storytelling frameworks.","Produced graphics, motion content, and social media materials.","Translated technical concepts into accessible digital stories."],
     outputs:["Social media campaigns","Motion graphics","Short-form videos","Content strategy"],
     tools:["Adobe Photoshop","Adobe Premiere","Adobe After Effects","Canva"],
-    media:[
-      {type:"drive", id:"1D-zso4Y9zjLzf-ACv5xM4wSIy4o-gHPo", label:"EcoPrefab Digital Storytelling"}
-    ],
-    abbr:"LW",
-    grad:"linear-gradient(135deg,#0d2a1f 0%,#1a4d38 100%)"
-  }
+    media:[{type:"drive", id:"1D-zso4Y9zjLzf-ACv5xM4wSIy4o-gHPo", label:"EcoPrefab Digital Storytelling"}],
+    abbr:"LW", grad:"linear-gradient(135deg,#0d2a1f 0%,#1a4d38 100%)" }
 ];
 
 var curProj=0,curMedia=0,isTrans=false;
