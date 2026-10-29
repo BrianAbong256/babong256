@@ -650,6 +650,8 @@ html,body{width:100%;height:100%;overflow:hidden;background:var(--black);font-fa
     <div class="wi-right"><div class="wi-tag">Digital &amp; Social Media</div><svg class="wi-arr" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
   </div>
 </div>
+  </div>
+</div>
       <div class="work-item anim-3" data-work-index="2" onclick="openModal(2)">
         <div><div class="wi-org">Plan International Uganda</div><div class="wi-title">International Day of the Girl Child Campaign</div></div>
         <div class="wi-right"><div class="wi-tag">Strategy</div><svg class="wi-arr" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div>
@@ -935,13 +937,17 @@ function applyTranslations(t){
   });
 
   // WORK
+   // WORK
+  var workLabel=document.querySelector(".p-work .section-label");
+  if(workLabel) workLabel.textContent=t.work.label;
+  var workH2=document.querySelector(".p-work h2");
+  if(workH2) workH2.innerHTML=t.work.h2_line1+"<br><em>"+t.work.h2_em+"</em>";
   document.querySelectorAll(".work-item").forEach(function(el){
-  var idx=+el.dataset.workIndex;
-  var item=t.work_items[idx]; if(!item) return;
-  var org=el.querySelector(".wi-org"); if(org) org.textContent=item.org;
-  var title=el.querySelector(".wi-title"); if(title) title.textContent=item.title;
-  var tag=el.querySelector(".wi-tag"); if(tag) tag.textContent=item.wtag;
-});
+    var idx=+el.dataset.workIndex;
+    var item=t.work_items[idx]; if(!item) return;
+    var org=el.querySelector(".wi-org"); if(org) org.textContent=item.org;
+    var title=el.querySelector(".wi-title"); if(title) title.textContent=item.title;
+    var tag=el.querySelector(".wi-tag"); if(tag) tag.textContent=item.wtag;
   });
 
   // SKILLS
@@ -1382,39 +1388,6 @@ function renderVisual(p){
   mVisual.innerHTML="<div class='modal-visual-inner' style='height:100%'>"+mainHTML+navBar+swipeHint+"</div>";
 }
 
-function renderModal(i,enterCls){
-  var p=projects[i]; // static: media, tools, abbr, grad, and English fallback text
-  var tr=(langCache[currentLang]||langCache.en); // translated text
-  var ptr=(tr && tr.projects && tr.projects[i]) || {};
-  var wtr=(tr && tr.work_items && tr.work_items[i]) || {};
-  var sec=(tr && tr.modal) || {context:"Context",contribution:"My Contribution",outputs:"Outputs",tools:"Tools"};
-
-  var org=wtr.org || p.org;
-  var title=wtr.title || p.title;
-  var tag=ptr.tag || p.tag;
-  var role=ptr.role || p.role;
-  var year=ptr.year || p.year;
-  var context=ptr.context || p.context;
-  var contribution=ptr.contribution || p.contribution;
-  var outputs=ptr.outputs || p.outputs;
-
-  document.getElementById("mTag").innerHTML=tag;
-  document.getElementById("mCount").textContent=String(i+1).padStart(2,"0")+" / "+String(projects.length).padStart(2,"0");
-  renderVisual(p);
-  var contribList=contribution.map(function(d){return "<div class='m-deliverable'>"+d+"</div>";}).join("");
-  var outputsList=outputs.map(function(d){return "<div class='m-deliverable'>"+d+"</div>";}).join("");
-  var toolsHTML=p.tools.map(function(tool){return "<span class='org-pill' style='font-size:.58rem;padding:.25rem .7rem;opacity:1'>"+tool+"</span>";}).join("");
-  var info="<div class='m-org'>"+org+"</div>"
-    +"<div class='m-title'>"+title+"</div>"
-    +"<div class='m-meta'>"+role+" &nbsp;&middot;&nbsp; "+year+"</div>"
-    +"<div style='margin-bottom:.9rem'><div class='m-sec-head'>"+sec.context+"</div><div class='m-desc' style='margin-bottom:0'>"+context+"</div></div>"
-    +"<div style='margin-bottom:.9rem'><div class='m-sec-head'>"+sec.contribution+"</div>"+contribList+"</div>"
-    +"<div style='margin-bottom:.9rem'><div class='m-sec-head'>"+sec.outputs+"</div>"+outputsList+"</div>"
-    +"<div><div class='m-sec-head'>"+sec.tools+"</div><div class='m-tools'>"+toolsHTML+"</div></div>";
-  var mInfo=document.getElementById("mInfo");
-  mInfo.innerHTML=info;
-  if(enterCls){mInfo.classList.add(enterCls);setTimeout(function(){mInfo.classList.remove(enterCls);},350);}
-}
 
 // ── FRACTAL TREE ──
 (function(){
